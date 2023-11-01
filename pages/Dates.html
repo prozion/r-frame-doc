@@ -1,0 +1,127 @@
+
+  <!DOCTYPE html>
+  <html lang='en'>
+    <head>
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <link rel='stylesheet' href='../styles/rdrr.css'>
+      <title>Dates</title>
+    </head>
+    <body>
+      <div class="container">
+<table summary="page for Dates" width="100%"><tr>
+<td>Dates</td>
+<td style="text-align: right;">R Documentation</td>
+</tr></table>
+<h2>Date Class</h2>
+<h3>Description</h3>
+<p>Description of the class <code>"Date"</code> representing calendar dates.
+</p>
+<h3>Usage</h3>
+<pre>
+## S3 method for class 'Date'
+summary(object, digits = 12, ...)
+
+## S3 method for class 'Date'
+print(x, max = NULL, ...)
+
+
+</pre>
+<h3>Arguments</h3>
+<table summary="R argblock">
+<tr valign="top">
+<td><code>object, x</code></td>
+<td>
+<p>a <code>Date</code> object to be summarized or printed.</p>
+</td>
+</tr>
+<tr valign="top">
+<td><code>digits</code></td>
+<td>
+<p>number of significant digits for the computations.</p>
+</td>
+</tr>
+<tr valign="top">
+<td><code>max</code></td>
+<td>
+<p>numeric or <code>NULL</code>, specifying the maximal number of
+entries to be printed.  By default, when <code>NULL</code>,
+<code>getOption("max.print")</code> used.</p>
+</td>
+</tr>
+<tr valign="top">
+<td><code>...</code></td>
+<td>
+<p>further arguments to be passed from or to other methods.</p>
+</td>
+</tr>
+</table>
+<h3>Details</h3>
+<p>Dates are represented as the number of days since 1970-01-01, with
+negative values for earlier dates.  They are always printed
+following the rules of the current Gregorian calendar, even though
+that calendar was not in use long ago (it was adopted in 1752 in
+Great Britain and its colonies).
+</p>
+<p>It is intended that the date should be an integer, but this is not
+enforced in the internal representation.  Fractional days will be
+ignored when printing.  It is possible to produce fractional days via
+the <code>mean</code> method or by adding or subtracting (see
+<code>Ops.Date</code>).
+</p>
+<p>From the many methods, see <code>methods(class = "Date")</code>, a few are
+documented separately, see below.
+</p>
+<h3>See Also</h3>
+<p><code>Sys.Date</code> for the current date.
+</p>
+<p><code>weekdays</code> for convenience extraction functions.
+</p>
+<p>Methods with extra arguments and documentation:
+</p>
+<dl>
+<dt><code>Ops.Date</code></dt>
+<dd>
+<p>for operators on <code>"Date"</code> objects.</p>
+</dd>
+<dt><code>format.Date</code></dt>
+<dd>
+<p>for conversion to and from character strings.</p>
+</dd>
+<dt><code>axis.Date</code></dt>
+<dd>
+<p>and <code>hist.Date</code> for plotting.</p>
+</dd>
+<dt><code>seq.Date</code></dt>
+<dd>
+<p>, <code>cut.Date</code>, and
+<code>round.Date</code> for utility operations.</p>
+</dd>
+</dl>
+<p><code>DateTimeClasses</code> for date-time classes.
+</p>
+<h3>Examples</h3>
+<pre>
+(today &lt;- Sys.Date())
+format(today, "%d %b %Y")  # with month as a word
+(tenweeks &lt;- seq(today, length.out=10, by="1 week")) # next ten weeks
+weekdays(today)
+months(tenweeks)
+
+(Dls &lt;- as.Date(.leap.seconds))
+
+##  length(&lt;Date&gt;) &lt;- n   now works
+ls &lt;- Dls; length(ls) &lt;- 12
+l2 &lt;- Dls; length(l2) &lt;- 5 + length(Dls)
+stopifnot(exprs = {
+  ## length(.) &lt;- * is compatible to subsetting/indexing:
+  identical(ls, Dls[seq_along(ls)])
+  identical(l2, Dls[seq_along(l2)])
+  ## has filled with NA's
+  is.na(l2[(length(Dls)+1):length(l2)])
+})
+</pre>
+</div>
+    </body>
+  </html>
+  

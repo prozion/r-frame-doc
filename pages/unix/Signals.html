@@ -1,0 +1,52 @@
+
+  <!DOCTYPE html>
+  <html lang='en'>
+    <head>
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <link rel='stylesheet' href='../styles/rdrr.css'>
+      <title>unix/Signals</title>
+    </head>
+    <body>
+      <div class="container">
+<table summary="page for Signals" width="100%"><tr>
+<td>Signals</td>
+<td style="text-align: right;">R Documentation</td>
+</tr></table>
+<h2>Interrupting Execution of R</h2>
+<h3>Description</h3>
+<p>On receiving <code>SIGUSR1</code> <span style="font-family: Courier New, Courier; color: #666666;"><b>R</b></span> will save the workspace and quit.
+<code>SIGUSR2</code> has the same result except that the <code>.Last</code>
+function and <code>on.exit</code> expressions will not be called.
+</p>
+<h3>Usage</h3>
+<pre>
+kill -USR1 pid
+kill -USR2 pid
+</pre>
+<h3>Arguments</h3>
+<table summary="R argblock"><tr valign="top">
+<td><code>pid</code></td>
+<td>
+<p>The process ID of the <span style="font-family: Courier New, Courier; color: #666666;"><b>R</b></span> process.</p>
+</td>
+</tr></table>
+<h3>Details</h3>
+<p>The commands history will also be saved if would be at normal
+termination.
+</p>
+<p>This is not available on Windows, and possibly on other OSes which do
+not support these signals.
+</p>
+<h3>Warning</h3>
+<p>It is possible that one or more <span style="font-family: Courier New, Courier; color: #666666;"><b>R</b></span> objects will be undergoing
+modification at the time the signal is sent.  These objects could be
+saved in a corrupted form.
+</p>
+<h3>See Also</h3>
+<p><code>Sys.getpid</code> to report the process ID for future use.
+</p>
+</div>
+    </body>
+  </html>
+  

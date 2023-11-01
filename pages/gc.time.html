@@ -1,0 +1,56 @@
+
+  <!DOCTYPE html>
+  <html lang='en'>
+    <head>
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <link rel='stylesheet' href='../styles/rdrr.css'>
+      <title>gc.time</title>
+    </head>
+    <body>
+      <div class="container">
+<table summary="page for gc.time" width="100%"><tr>
+<td>gc.time</td>
+<td style="text-align: right;">R Documentation</td>
+</tr></table>
+<h2>Report Time Spent in Garbage Collection</h2>
+<h3>Description</h3>
+<p>This function reports the time spent in garbage collection so far in
+the <span style="font-family: Courier New, Courier; color: #666666;"><b>R</b></span> session while GC timing was enabled.
+</p>
+<h3>Usage</h3>
+<pre>
+gc.time(on = TRUE)
+</pre>
+<h3>Arguments</h3>
+<table summary="R argblock"><tr valign="top">
+<td><code>on</code></td>
+<td>
+<p>logical; if <code>TRUE</code>, GC timing is enabled.</p>
+</td>
+</tr></table>
+<h3>Details</h3>
+<p>Due to timer resolution this may be under-estimate.
+</p>
+<p>This is a primitive.
+</p>
+<h3>Value</h3>
+<p>A numerical vector of length 5 giving the user CPU time, the system
+CPU time, the elapsed time and children's user and system CPU times
+(normally both zero), of time spent doing garbage collection whilst
+GC timing was enabled.
+</p>
+<p>Times of child processes are not available on Windows and will always
+be given as <code>NA</code>.
+</p>
+<h3>See Also</h3>
+<p><code>gc</code>,
+<code>proc.time</code> for the timings for the session.</p>
+<h3>Examples</h3>
+<pre>
+gc.time()
+</pre>
+</div>
+    </body>
+  </html>
+  

@@ -1,0 +1,49 @@
+
+  <!DOCTYPE html>
+  <html lang='en'>
+    <head>
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <link rel='stylesheet' href='../styles/rdrr.css'>
+      <title>builtins</title>
+    </head>
+    <body>
+      <div class="container">
+<table summary="page for builtins" width="100%"><tr>
+<td>builtins</td>
+<td style="text-align: right;">R Documentation</td>
+</tr></table>
+<h2>Returns the Names of All Built-in Objects</h2>
+<h3>Description</h3>
+<p>Return the names of all the built-in objects.  These are fetched
+directly from the symbol table of the <span style="font-family: Courier New, Courier; color: #666666;"><b>R</b></span> interpreter.
+</p>
+<h3>Usage</h3>
+<pre>builtins(internal = FALSE)</pre>
+<h3>Arguments</h3>
+<table summary="R argblock"><tr valign="top">
+<td><code>internal</code></td>
+<td>
+<p>a logical indicating whether only ‘internal’
+functions (which can be called via <code>.Internal</code>) should
+be returned.</p>
+</td>
+</tr></table>
+<h3>Details</h3>
+<p><code>builtins()</code> returns an unsorted list of the objects in the
+symbol table, that is all the objects in the base environment.
+These are the built-in objects plus any that have been added
+subsequently when the base package was loaded.  It is less confusing
+to use <code>ls(baseenv(), all.names = TRUE)</code>.
+</p>
+<p><code>builtins(TRUE)</code> returns an unsorted list of the names of internal
+functions, that is those which can be accessed as
+<code>.Internal(<var>foo</var>(args ...))</code> for <var>foo</var> in the list.
+</p>
+<h3>Value</h3>
+<p>A character vector.
+</p>
+</div>
+    </body>
+  </html>
+  

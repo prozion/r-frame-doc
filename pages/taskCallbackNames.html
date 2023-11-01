@@ -1,0 +1,72 @@
+
+  <!DOCTYPE html>
+  <html lang='en'>
+    <head>
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <link rel='stylesheet' href='../styles/rdrr.css'>
+      <title>taskCallbackNames</title>
+    </head>
+    <body>
+      <div class="container">
+<table summary="page for taskCallbackNames" width="100%"><tr>
+<td>taskCallbackNames</td>
+<td style="text-align: right;">R Documentation</td>
+</tr></table>
+<h2>Query the Names of the Current Internal Top-Level Task Callbacks</h2>
+<h3>Description</h3>
+<p>This provides a way to get the names (or identifiers)
+for the currently registered task callbacks
+that are invoked at the conclusion of each top-level task.
+These identifiers can be used to remove a callback.
+</p>
+<h3>Usage</h3>
+<pre>
+getTaskCallbackNames()
+</pre>
+<h3>Value</h3>
+<p>A character vector giving the name for each of the
+registered callbacks which are invoked when
+a top-level task is completed successfully.
+Each name is the one used when registering
+the callbacks and returned as the in the
+call to <code>addTaskCallback</code>.
+</p>
+<h3>Note</h3>
+<p>One can use <code>taskCallbackManager</code>
+to manage user-level task callbacks,
+i.e., S-language functions, entirely within
+the S language and access the names
+more directly.
+</p>
+<h3>See Also</h3>
+<p><code>addTaskCallback</code>,
+<code>removeTaskCallback</code>,
+<code>taskCallbackManager</code>\
+<a href="https://developer.r-project.org/TaskHandlers.pdf">https://developer.r-project.org/TaskHandlers.pdf</a>
+</p>
+<h3>Examples</h3>
+<pre>
+ n &lt;- addTaskCallback(function(expr, value, ok, visible) {
+                        cat("In handler\n")
+                        return(TRUE)
+                      }, name = "simpleHandler")
+
+ getTaskCallbackNames()
+
+   # now remove it by name
+ removeTaskCallback("simpleHandler")
+
+
+ h &lt;- taskCallbackManager()
+ h$add(function(expr, value, ok, visible) {
+                        cat("In handler\n")
+                        return(TRUE)
+                      }, name = "simpleHandler")
+ getTaskCallbackNames()
+ removeTaskCallback("R-taskCallbackManager")
+</pre>
+</div>
+    </body>
+  </html>
+  

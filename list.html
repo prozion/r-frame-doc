@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>R functions framed Reference</title>
+    <!-- <link rel="stylesheet" href="./reset.css"> -->
+    <link rel="stylesheet" href="styles/newlisp.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <!-- <base href="https://rdrr.io/r/base/" target="right_frame"> -->
+    <base href="pages/" target="right_frame">
+  </head>
+  <body>
+    <dl class="dl-horizontal">
+      <h4>Arithmetic</h4>
+      <dt><a href="Arithmetic.html">+, -, *, /, ^, %%, %/%</a></dt> <!-- Arithmetic Operators -->
+      <dt><a href="complex.html">complex</a></dt> <!-- Complex Numbers and Basic Functionality -->
+      <dt><a href="is.finite.html">is.finite</a></dt> <!-- Finite, Infinite and NaN Numbers -->
+
+      <h4>Arrays and matrices</h4>
+      <dt><a href="aperm.html">aperm</a></dt> <!-- Array Transposition -->
+      <dt><a href="apply.html">apply</a></dt> <!-- Apply Functions Over Array Margins -->
+      <dt><a href="array.html">array</a></dt> <!-- Multi-way Arrays -->
+      <dt><a href="asplit.html">asplit</a></dt> <!-- Split Array/Matrix By Its Margins -->
+      <dt><a href="crossprod.html">crossprod</a></dt> <!-- Matrix Crossproduct -->
+      <dt><a href="det.html">det</a></dt> <!-- Calculate the Determinant of a Matrix -->
+      <dt><a href="diag.html">diag</a></dt> <!-- Matrix Diagonals -->
+      <dt><a href="dim.html">dim</a></dt> <!-- Dimensions of an Object -->
+      <dt><a href="dimnames.html">dimnames</a></dt> <!-- Dimnames of an Object -->
+      <dt><a href="eigen.html">eigen</a></dt> <!-- Spectral Decomposition of a Matrix -->
+      <dt><a href="grouping.html">grouping</a></dt> <!-- Grouping Permutation -->
+      <dt><a href="isSymmetric.html">isSymmetric</a></dt> <!-- Test if a Matrix or other Object is Symmetric (Hermitian) -->
+      <dt><a href="kappa.html">kappa</a></dt> <!-- Compute or Estimate the Condition Number of a Matrix -->
+      <dt><a href="kronecker.html">kronecker</a></dt> <!-- Kronecker Products on Arrays -->
+      <dt><a href="lower.tri.html">lower.tri</a></dt> <!-- Lower and Upper Triangular Part of a Matrix -->
+      <dt><a href="matmult.html">matmult</a></dt> <!-- Matrix Multiplication -->
+      <dt><a href="mat.or.vec.html">mat.or.vec</a></dt> <!-- Create a Matrix or a Vector -->
+      <dt><a href="matrix.html">matrix</a></dt> <!-- Matrices -->
+      <dt><a href="maxCol.html">maxCol</a></dt> <!-- Find Maximum Position in Matrix -->
+      <dt><a href="norm.html">norm</a></dt> <!-- Compute the Norm of a Matrix -->
+      <dt><a href="nrow.html">nrow</a></dt> <!-- The Number of Rows/Columns of an Array -->
+
+      <h4>Assignments</h4>
+      <dt><a href="assign.html">assign</a></dt> <!-- Assign a Value to a Name -->
+      <dt><a href="assignOps.html">assignOps</a></dt> <!-- Assignment Operators -->
+      <dt><a href="delayedAssign.html">delayedAssign</a></dt> <!-- Delay Evaluation -->
+
+      <h4>Built-ins</h4>
+      <dt><a href="builtins.html">builtins</a></dt> <!-- Returns the Names of All Built-in Objects -->
+      <dt><a href="Constants.html">Constants</a></dt> <!-- Built-in Constants -->
+      <dt><a href="contributors.html">contributors</a></dt> <!-- R Project Contributors -->
+      <dt><a href="copyright.html">copyright</a></dt> <!-- Copyrights of Files Used to Build R -->
+      <dt><a href="license.html">license</a></dt> <!-- The R License Terms -->
+      <dt><a href="notyet.html">notyet</a></dt> <!-- Not Yet Implemented Functions and Unused Arguments -->
+      <dt><a href="NumericConstants.html">NumericConstants</a></dt> <!-- Numeric Constants -->
+
+      <h4>Control flow and exceptions</h4>
+      <dt><a href="Control.html">Control</a></dt> <!-- Control Flow -->
+      <dt><a href="ifelse.html">ifelse</a></dt> <!-- Conditional Element Selection -->
+
+      <h4>Dataframes and Tables</h4>
+      <dt><a href="as.data.frame.html">as.data.frame</a></dt> <!-- Coerce to a Data Frame -->
+      <dt><a href="by.html">by</a></dt> <!-- Apply a Function to a Data Frame Split by Factors -->
+      <dt><a href="cbind.html">cbind</a></dt> <!-- Combine R Objects by Rows or Columns -->
+      <dt><a href="col.html">col</a></dt> <!-- Column Indexes -->
+      <dt><a href="colnames.html">colnames</a></dt> <!-- Row and Column Names -->
+      <dt><a href="colSums.html">colSums</a></dt> <!-- Form Row and Column Sums and Means -->
+      <dt><a href="data.frame.html">data.frame</a></dt> <!-- Data Frames -->
+      <dt><a href="dataframeHelpers.html">dataframeHelpers</a></dt> <!-- Data Frame Auxiliary Functions -->
+      <dt><a href="data.matrix.html">data.matrix</a></dt> <!-- Convert a Data Frame to a Numeric Matrix -->
+      <dt><a href="expand.grid.html">expand.grid</a></dt> <!-- Create a Data Frame from All Combinations of Factor Variables -->
+      <dt><a href="Extract.data.frame.html">Extract.data.frame</a></dt> <!-- Extract or Replace Parts of a Data Frame -->
+      <dt><a href="marginSums.html">marginSums</a></dt> <!-- Compute table margins -->
+      <dt><a href="merge.html">merge</a></dt> <!-- Merge Two Data Frames -->
+
+      <h4>Date and time</h4>
+      <dt><a href="as.Date.html">as.Date</a></dt> <!-- Date Conversion Functions to and from Character -->
+      <dt><a href="as.POSIXlt.html">as.POSIXlt</a></dt> <!-- Date-time Conversion Functions -->
+      <dt><a href="date.html">date</a></dt> <!-- System Date and Time -->
+      <dt><a href="Dates.html">Dates</a></dt> <!-- Date Class -->
+      <dt><a href="DateTimeClasses.html">DateTimeClasses</a></dt> <!-- Date-Time Classes -->
+      <dt><a href="difftime.html">difftime</a></dt> <!-- Time Intervals / Differences -->
+      <dt><a href="ISOdatetime.html">ISOdatetime</a></dt> <!-- Date-time Conversion Functions from Numeric Representations -->
+      <dt><a href="Ops.Date.html">Ops.Date</a></dt> <!-- Operators on the Date Class -->
+
+      <h4>Debug</h4>
+      <dt><a href="debug.html">debug</a></dt> <!-- Debug a Function -->
+      <dt><a href="dump.html">dump</a></dt> <!-- Text Representations of R Objects -->
+      <dt><a href="message.html">message</a></dt> <!-- Diagnostic Messages -->
+
+      <h4>Environments</h4>
+      <dt><a href="as.environment.html">as.environment</a></dt> <!-- Coerce to an Environment Object -->
+      <dt><a href="bindenv.html">bindenv</a></dt> <!-- Binding and Environment Locking, Active Bindings -->
+      <dt><a href="browser.html">browser</a></dt> <!-- Environment Browser -->
+      <dt><a href="browserText.html">browserText</a></dt> <!-- Functions to Retrieve Values Supplied by Calls to the Browser -->
+      <dt><a href="eapply.html">eapply</a></dt> <!-- Apply a Function Over Values in an Environment -->
+      <dt><a href="environment.html">environment</a></dt> <!-- Environment Access -->
+      <dt><a href="EnvVar.html">EnvVar</a></dt> <!-- Environment Variables -->
+      <dt><a href="ns-topenv.html">ns-topenv</a></dt> <!-- Top Level Environment -->
+
+      <h4>Equations</h4>
+      <dt><a href="backsolve.html">backsolve</a></dt> <!-- Solve an Upper or Lower Triangular System -->
+
+      <h4>Expressions</h4>
+      <dt><a href="allnames.html">allnames</a></dt> <!-- Find All Names in an Expression -->
+      <dt><a href="bquote.html">bquote</a></dt> <!-- Partial substitution in expressions -->
+      <dt><a href="chkDots.html">chkDots</a></dt> <!-- Warn About Extraneous Arguments in the &quot;...&quot; of Its Caller -->
+      <dt><a href="comment.html">comment</a></dt> <!-- Query or Set a &#39;&quot;comment&quot;&#39; Attribute -->
+      <dt><a href="deparse.html">deparse</a></dt> <!-- Expression Deparsing -->
+      <dt><a href="deparseOpts.html">deparseOpts</a></dt> <!-- Options for Expression Deparsing -->
+      <dt><a href="eval.html">eval</a></dt> <!-- Evaluate an (Unevaluated) Expression -->
+      <dt><a href="expression.html">expression</a></dt> <!-- Unevaluated Expressions -->
+      <dt><a href="force.html">force</a></dt> <!-- Force Evaluation of an Argument -->
+      <dt><a href="Last.value.html">Last.value</a></dt> <!-- Value of Last Evaluated Expression -->
+
+      <h4>Factors</h4>
+      <dt><a href="cut.html">cut</a></dt> <!-- Convert Numeric to Factor -->
+      <dt><a href="cut.POSIXt.html">cut.POSIXt</a></dt> <!-- Convert a Date or Date-Time Object to a Factor -->
+      <dt><a href="droplevels.html">droplevels</a></dt> <!-- Drop Unused Levels from Factors -->
+      <dt><a href="Extract.factor.html">Extract.factor</a></dt> <!-- Extract or Replace Parts of a Factor -->
+      <dt><a href="factor.html">factor</a></dt> <!-- Factors -->
+      <dt><a href="gl.html">gl</a></dt> <!-- Generate Factor Levels -->
+      <dt><a href="interaction.html">interaction</a></dt> <!-- Compute Factor Interactions -->
+      <dt><a href="levels.html">levels</a></dt> <!-- Levels Attributes -->
+      <dt><a href="nlevels.html">nlevels</a></dt> <!-- The Number of Levels of a Factor -->
+
+      <h4>Filesystem</h4>
+      <dt><a href="basename.html">basename</a></dt> <!-- Manipulate File Paths -->
+      <dt><a href="connections.html">connections</a></dt> <!-- Functions to Manipulate Connections (Files, URLs, ...) -->
+      <dt><a href="dput.html">dput</a></dt> <!-- Write an Object to a File or Recreate it -->
+      <dt><a href="file.access.html">file.access</a></dt> <!-- Ascertain File Accessibility -->
+      <dt><a href="file.choose.html">file.choose</a></dt> <!-- Choose a File Interactively -->
+      <dt><a href="file.info.html">file.info</a></dt> <!-- Extract File Information -->
+      <dt><a href="file.path.html">file.path</a></dt> <!-- Construct Path to File -->
+      <dt><a href="files.html">File Manipulation</a></dt> <!-- File Manipulation -->
+      <dt><a href="files2.html">Directories/permissions</a></dt> <!-- Manipulation of Directories and File Permissions -->
+      <dt><a href="file.show.html">file.show</a></dt> <!-- Display One or More Text Files -->
+      <dt><a href="list.files.html">list.files</a></dt> <!-- List the Files in a Directory/Folder -->
+      <dt><a href="normalizePath.html">normalizePath</a></dt> <!-- Express File Paths in Canonical Form -->
+
+      <h4>Functional Programming</h4>
+      <dt><a href="funprog.html">funprog</a></dt> <!-- Common Higher-Order Functions in Functional Programming... -->
+      <dt><a href="identity.html">identity</a></dt> <!-- Identity Function -->
+
+      <h4>Functions</h4>
+      <dt><a href="args.html">args</a></dt> <!-- Argument List of a Function -->
+      <dt><a href="as.function.html">as.function</a></dt> <!-- Convert Object to Function -->
+      <dt><a href="body.html">body</a></dt> <!-- Access to and Manipulation of the Body of a Function -->
+      <dt><a href="call.html">call</a></dt> <!-- Function Calls -->
+      <dt><a href="callCC.html">callCC</a></dt> <!-- Call With Current Continuation -->
+      <dt><a href="do.call.html">do.call</a></dt> <!-- Execute a Function Call -->
+      <dt><a href="dots.html">dots</a></dt> <!-- ..., &#39;..1&#39;, etc used in Functions -->
+      <dt><a href="forceAndCall.html">forceAndCall</a></dt> <!-- Call a function with Some Arguments Forced -->
+      <dt><a href="formals.html">formals</a></dt> <!-- Access to and Manipulation of the Formal Arguments -->
+      <dt><a href="function.html">function</a></dt> <!-- Function Definition
+       -->
+      <dt><a href="Internal.html">Internal</a></dt> <!-- Call an Internal Function -->
+      <dt><a href="InternalMethods.html">InternalMethods</a></dt> <!-- Internal Generic Functions -->
+      <dt><a href="is.function.html">is.function</a></dt> <!-- Is an Object of Type (Primitive) Function? -->
+      <dt><a href="match.call.html">match.call</a></dt> <!-- Argument Matching -->
+      <dt><a href="match.fun.html">match.fun</a></dt> <!-- Extract a Function Specified by Name -->
+      <dt><a href="nargs.html">nargs</a></dt> <!-- The Number of Arguments to a Function -->
+      <dt><a href="on.exit.html">on.exit</a></dt> <!-- Function Exit Code -->
+
+      <h4>Functions FFI</h4>
+      <dt><a href="CallExternal.html">CallExternal</a></dt> <!-- Modern Interfaces to C/C++ code -->
+      <dt><a href="Cstack_info.html">Cstack_info</a></dt> <!-- Report Information on C Stack Size and Usage -->
+      <dt><a href="dynload.html">dynload</a></dt> <!-- Foreign Function Interface -->
+      <dt><a href="Foreign.html">Foreign</a></dt> <!-- Foreign Function Interface -->
+      <dt><a href="Foreign-internal.html">Foreign-internal</a></dt> <!-- Internal Versions of the Foreign Function Interface -->
+      <dt><a href="getCallingDLL.html">getCallingDLL</a></dt> <!-- Compute DLL for Native Interface Call -->
+      <dt><a href="getDLLRegisteredRoutines.html">getDLLRegisteredRoutines</a></dt> <!-- Reflectance Information for C/Fortran routines in a DLL -->
+      <dt><a href="getLoadedDLLs.html">getLoadedDLLs</a></dt> <!-- Get DLLs Loaded in Current Session -->
+      <dt><a href="getNativeSymbolInfo.html">getNativeSymbolInfo</a></dt> <!-- Obtain a Description of one or more Native (C/Fortran)... -->
+      <dt><a href="missing.html">missing</a></dt> <!-- Does a Formal Argument have a Value? -->
+
+      <h4>Graphics</h4>
+      <dt><a href="dev.html">dev</a></dt> <!-- Lists of Open/Active Graphics Devices -->
+
+      <h4>HTTP and network</h4>
+      <dt><a href="curlGetHeaders.html">curlGetHeaders</a></dt> <!-- Retrieve Headers from URLs -->
+
+      <h4>Import and export</h4>
+      <dt><a href="load.html">load</a></dt> <!-- Reload Saved Datasets -->
+
+      <h4>Input and output</h4>
+      <dt><a href="cat.html">cat</a></dt> <!-- Concatenate and Print -->
+      <dt><a href="format.html">format</a></dt> <!-- Encode in a Common Format -->
+      <dt><a href="formatc.html">formatc</a></dt> <!-- Formatting Using C-style Formats -->
+      <dt><a href="formatDL.html">formatDL</a></dt> <!-- Format Description Lists -->
+      <dt><a href="format.info.html">format.info</a></dt> <!-- format(.) Information -->
+      <dt><a href="format.pval.html">format.pval</a></dt> <!-- Format P Values -->
+      <dt><a href="gzcon.html">gzcon</a></dt> <!-- (De)compress I/O Through Connections -->
+      <dt><a href="hexmode.html">hexmode</a></dt> <!-- Display Numbers in Hexadecimal -->
+      <dt><a href="invisible.html">invisible</a></dt> <!-- Change the Print Mode to Invisible -->
+      <dt><a href="noquote.html">noquote</a></dt> <!-- Class for &#39;no quote&#39; Printing of Character Strings -->
+      <dt><a href="octmode.html">octmode</a></dt> <!-- Display Numbers in Octal -->
+
+      <h4>Interpreter</h4>
+      <dt><a href="gc.html">gc</a></dt> <!-- Garbage Collection -->
+      <dt><a href="gc.time.html">gc.time</a></dt> <!-- Report Time Spent in Garbage Collection -->
+      <dt><a href="gctorture.html">gctorture</a></dt> <!-- Torture Garbage Collector -->
+      <dt><a href="interactive.html">interactive</a></dt> <!-- Is R Running Interactively? -->
+      <dt><a href="isR.html">isR</a></dt> <!-- Are we using R, rather than S? -->
+      <dt><a href="make.names.html">make.names</a></dt> <!-- Make Syntactically Valid Names -->
+      <dt><a href="memCompress.html">memCompress</a></dt> <!-- In-memory Compression and Decompression -->
+      <dt><a href="memlimits.html">memlimits</a></dt> <!-- Query and Set Heap Size Limits -->
+      <dt><a href="Memory.html">Memory</a></dt> <!-- Memory Available for Data Storage -->
+      <dt><a href="Memory-limits.html">Memory-limits</a></dt> <!-- Memory Limits in R -->
+      <dt><a href="memory.profile.html">memory.profile</a></dt> <!-- Profile the Usage of Cons Cells -->
+      <dt><a href="name.html">name</a></dt> <!-- Names and Symbols -->
+      <dt><a href="options.html">options</a></dt> <!-- Options Settings -->
+
+      <h4>Lists</h4>
+      <dt><a href="lapply.html">lapply</a></dt> <!-- Apply a Function over a List or Vector -->
+      <dt><a href="lengths.html">lengths</a></dt> <!-- Lengths of List or Vector Elements -->
+      <dt><a href="list.html">list</a></dt> <!-- Lists - Generic and Dotted Pairs -->
+      <dt><a href="list2DF.html">list2DF</a></dt> <!-- Create Data Frame From List -->
+      <dt><a href="list2env.html">list2env</a></dt> <!-- From A List, Build or Add To an Environment -->
+      <dt><a href="mapply.html">mapply</a></dt> <!-- Apply a Function to Multiple List or Vector Arguments -->
+
+      <h4>Logical operations</h4>
+      <dt><a href="Comparison.html"><, <=, >, >=, ==, !=</a></dt> <!-- Relational Operators -->
+      <dt><a href="all.html">all</a></dt> <!-- Are All Values True? -->
+      <dt><a href="any.html">any</a></dt> <!-- Are Some Values True? -->
+      <dt><a href="bitwise.html">bitwise</a></dt> <!-- Bitwise Logical Operations -->
+      <dt><a href="conditions.html">conditions</a></dt> <!-- Condition Handling and Recovery -->
+      <dt><a href="Logic.html">Logic</a></dt> <!-- Logical Operators -->
+
+      <h4>Math special functions</h4>
+      <dt><a href="Bessel.html">Bessel</a></dt> <!-- Bessel Functions -->
+      <dt><a href="chol.html">chol</a></dt> <!-- The Choleski Decomposition -->
+      <dt><a href="chol2inv.html">chol2inv</a></dt> <!-- Inverse from Choleski (or QR) Decomposition -->
+      <dt><a href="Hyperbolic.html">Hyperbolic</a></dt> <!-- Hyperbolic Functions -->
+      <dt><a href="Log.html">Log</a></dt> <!-- Logarithms and Exponentials -->
+      <dt><a href="MathFun.html">sqrt, abs</a></dt> <!-- Miscellaneous Mathematical Functions -->
+      <dt><a href="mean.html">mean</a></dt> <!-- Arithmetic Mean -->
+
+      <h4>Namespaces</h4>
+      <dt><a href="ns-hooks.html">ns-hooks</a></dt> <!-- Hooks for Namespace Events -->
+      <dt><a href="ns-internal.html">ns-internal</a></dt> <!-- Namespace Internals -->
+      <dt><a href="ns-load.html">ns-load</a></dt> <!-- Loading and Unloading Name Spaces -->
+      <dt><a href="ns-reflect.html">ns-reflect</a></dt> <!-- Namespace Reflection Support -->
+
+      <h4>Objects</h4>
+      <dt><a href="all.equal.html">all.equal</a></dt> <!-- Test if Two Objects are (Nearly) Equal -->
+      <dt><a href="AsIs.html">AsIs</a></dt> <!-- Inhibit Interpretation/Conversion of Objects -->
+      <dt><a href="attr.html">attr</a></dt> <!-- Object Attributes -->
+      <dt><a href="attributes.html">attributes</a></dt> <!-- Object Attribute Lists -->
+      <dt><a href="class.html">class</a></dt> <!-- Object Classes -->
+      <dt><a href="data.class.html">data.class</a></dt> <!-- Object Classes -->
+      <dt><a href="Defunct.html">Defunct</a></dt> <!-- Marking Objects as Defunct -->
+      <dt><a href="Deprecated.html">Deprecated</a></dt> <!-- Marking Objects as Deprecated -->
+      <dt><a href="exists.html">exists</a></dt> <!-- Is an Object Defined? -->
+      <dt><a href="Extract.html">Extract</a></dt> <!-- Extract or Replace Parts of an Object -->
+      <dt><a href="get.html">get</a></dt> <!-- Return the Value of a Named Object -->
+      <dt><a href="groupGeneric.html">groupGeneric</a></dt> <!-- S3 Group Generic Functions -->
+      <dt><a href="identical.html">identical</a></dt> <!-- Test Objects for Exact Equality -->
+      <dt><a href="is.language.html">is.language</a></dt> <!-- Is an Object a Language Object? -->
+      <dt><a href="is.object.html">is.object</a></dt> <!-- Is an Object &#39;internally classed&#39;? -->
+      <dt><a href="is.recursive.html">is.recursive</a></dt> <!-- Is an Object Atomic or Recursive? -->
+      <dt><a href="isS4.html">isS4</a></dt> <!-- Test for an S4 object -->
+      <dt><a href="is.single.html">is.single</a></dt> <!-- Is an Object of Single Precision Type? -->
+      <dt><a href="is.unsorted.html">is.unsorted</a></dt> <!-- Test if an Object is Not Sorted -->
+      <dt><a href="labels.html">labels</a></dt> <!-- Find Labels from Object
+       -->
+      <dt><a href="lazyload.html">lazyload</a></dt> <!-- Lazy Load a Database of R Objects -->
+      <dt><a href="length.html">length</a></dt> <!-- Length of an Object -->
+      <dt><a href="ls.html">ls</a></dt> <!-- List Objects -->
+      <dt><a href="mode.html">mode</a></dt> <!-- The (Storage) Mode of an Object -->
+      <dt><a href="NA.html">NA</a></dt> <!-- &#39;Not Available&#39; / Missing Values -->
+      <dt><a href="names.html">names</a></dt> <!-- The Names of an Object -->
+      <dt><a href="NULL.html">NULL</a></dt> <!-- The Null Object -->
+
+      <h4>Packages</h4>
+      <dt><a href="attach.html">attach</a></dt> <!-- Attach Set of R Objects to Search Path -->
+      <dt><a href="autoload.html">autoload</a></dt> <!-- On-demand Loading of Packages -->
+      <dt><a href="base-defunct.html">base-defunct</a></dt> <!-- Defunct Functions in Package &#39;base&#39; -->
+      <dt><a href="base-deprecated.html">base-deprecated</a></dt> <!-- Deprecated Functions in Package &#39;base&#39; -->
+      <dt><a href="base-internal.html">base-internal</a></dt> <!-- Internal Objects in Package &#39;base&#39; -->
+      <dt><a href="base-package.html">base-package</a></dt> <!-- The R Base Package -->
+      <dt><a href="conflicts.html">conflicts</a></dt> <!-- Search for Masked Objects on the Search Path -->
+      <dt><a href="detach.html">detach</a></dt> <!-- Detach Objects from the Search Path -->
+      <dt><a href="extSoftVersion.html">extSoftVersion</a></dt> <!-- Report Versions of Third-Party Software -->
+      <dt><a href="find.package.html">find.package</a></dt> <!-- Find Packages -->
+      <dt><a href="libPaths.html">libPaths</a></dt> <!-- Search Paths for Packages -->
+      <dt><a href="library.html">library</a></dt> <!-- Loading/Attaching and Listing of Packages -->
+      <dt><a href="library.dynam.html">library.dynam</a></dt> <!-- Loading DLLs from Packages -->
+      <dt><a href="numeric_version.html">numeric_version</a></dt> <!-- Numeric Versions -->
+
+      <h4>Randomness</h4>
+      <dt><a href="jitter.html">jitter</a></dt> <!-- &#39;Jitter&#39; (Add Noise) to Numbers -->
+
+      <h4>Strings and regexps</h4>
+      <dt><a href="abbreviate.html">abbreviate</a></dt> <!-- Abbreviate Strings -->
+      <dt><a href="agrep.html">agrep</a></dt> <!-- Approximate String Matching (Fuzzy Matching) -->
+      <dt><a href="character.html">character</a></dt> <!-- Character Vectors -->
+      <dt><a href="char.expand.html">char.expand</a></dt> <!-- Expand a String with Respect to a Target Table -->
+      <dt><a href="charmatch.html">charmatch</a></dt> <!-- Partial String Matching -->
+      <dt><a href="chartr.html">chartr</a></dt> <!-- Character Translation and Casefolding -->
+      <dt><a href="encodeString.html">encodeString</a></dt> <!-- Encode Character Vector as for Printing -->
+      <dt><a href="Encoding.html">Encoding</a></dt> <!-- Read or Set the Declared Encodings for a Character Vector -->
+      <dt><a href="grep.html">grep</a></dt> <!-- Pattern Matching and Replacement -->
+      <dt><a href="make.unique.html">make.unique</a></dt> <!-- Make Character Strings Unique -->
+      <dt><a href="nchar.html">nchar</a></dt> <!-- Count the Number of Characters (or Bytes or Width) -->
+
+      <h4>System</h4>
+      <dt><a href="capabilities.html">capabilities</a></dt> <!-- Report Capabilities of this Build of R -->
+      <dt><a href="commandArgs.html">commandArgs</a></dt> <!-- Extract Command Line Arguments -->
+      <dt><a href="gettext.html">gettext</a></dt> <!-- Translate Text Messages -->
+      <dt><a href="getwd.html">getwd</a></dt> <!-- Get or Set Working Directory -->
+      <dt><a href="l10n_info.html">l10n_info</a></dt> <!-- Localization Information -->
+      <dt><a href="libcurlVersion.html">libcurlVersion</a></dt> <!-- Report Version of libcurl -->
+      <dt><a href="locales.html">locales</a></dt> <!-- Query or Set Aspects of the Locale -->
+
+      <h4>Vectors</h4>
+      <dt><a href="bincode.html">.bincode</a></dt> <!-- Bin a Numeric Vector -->
+      <dt><a href="append.html">append</a></dt> <!-- Vector Merging -->
+      <dt><a href="c.html">c</a></dt> <!-- Combine Values into a Vector or List -->
+      <dt><a href="Colon.html">Colon</a></dt> <!-- Colon Operator -->
+      <dt><a href="cumsum.html">cumsum</a></dt> <!-- Cumulative Sums, Products, and Extremes -->
+      <dt><a href="double.html">double</a></dt> <!-- Double-Precision Vectors -->
+      <dt><a href="duplicated.html">duplicated</a></dt> <!-- Determine Duplicate Elements -->
+      <dt><a href="Extremes.html">Extremes</a></dt> <!-- Maxima and Minima -->
+      <dt><a href="findInterval.html">findInterval</a></dt> <!-- Find Interval Numbers or Indices -->
+      <dt><a href="grepRaw.html">grepRaw</a></dt> <!-- Pattern Matching for Raw Vectors -->
+      <dt><a href="iconv.html">iconv</a></dt> <!-- Convert Character Vector between Encodings -->
+      <dt><a href="integer.html">integer</a></dt> <!-- Integer Vectors -->
+      <dt><a href="logical.html">logical</a></dt> <!-- Logical Vectors -->
+      <dt><a href="LongVectors.html">LongVectors</a></dt> <!-- Long Vectors -->
+      <dt><a href="match.html">match</a></dt> <!-- Value Matching -->
+      <dt><a href="match.arg.html">match.arg</a></dt> <!-- Argument Verification Using Partial Matching -->
+      <dt><a href="numeric.html">numeric</a></dt> <!-- Numeric Vectors -->
+
+      <h4>Unsorted</h4>
+      <dt><a href="dcf.html">dcf</a></dt> <!-- Read and Write Data in DCF Format -->
+      <dt><a href="diff.html">diff</a></dt> <!-- Lagged Differences -->
+      <dt><a href="dontCheck.html">dontCheck</a></dt> <!-- Identity Function to Suppress Checking -->
+      <dt><a href="drop.html">drop</a></dt> <!-- Drop Redundant Extent Information -->
+      <dt><a href="icuSetCollate.html">icuSetCollate</a></dt> <!-- Setup Collation by ICU -->
+      <dt><a href="La_library.html">La_library</a></dt> <!-- LAPACK Library -->
+      <dt><a href="La_version.html">La_version</a></dt> <!-- LAPACK Version -->
+      <dt><a href="ns-dblcolon.html">ns-dblcolon</a></dt> <!-- Double Colon and Triple Colon Operators -->
+
+
+
+
+      <dt><a href="order.html">order</a></dt> <!-- Ordering Permutation -->
+      <dt><a href="outer.html">outer</a></dt> <!-- Outer Product of Arrays -->
+      <dt><a href="Paren.html">Paren</a></dt> <!-- Parentheses and Braces -->
+      <dt><a href="parse.html">parse</a></dt> <!-- Parse R Expressions -->
+      <dt><a href="paste.html">paste</a></dt> <!-- Concatenate Strings -->
+      <dt><a href="path.expand.html">path.expand</a></dt> <!-- Expand File Paths -->
+      <dt><a href="pcre_config.html">pcre_config</a></dt> <!-- Report Configuration Options for PCRE -->
+      <dt><a href="pipeOp.html">pipeOp</a></dt> <!-- Forward Pipe Operator -->
+      <dt><a href="Platform.html">Platform</a></dt> <!-- Platform Specific Variables -->
+      <dt><a href="plot.html">plot</a></dt> <!-- Generic X-Y Plotting -->
+      <dt><a href="pmatch.html">pmatch</a></dt> <!-- Partial String Matching -->
+      <dt><a href="polyroot.html">polyroot</a></dt> <!-- Find Zeros of a Real or Complex Polynomial -->
+      <dt><a href="pos.to.env.html">pos.to.env</a></dt> <!-- Convert Positions in the Search Path to Environments -->
+      <dt><a href="pretty.html">pretty</a></dt> <!-- Pretty Breakpoints -->
+      <dt><a href="Primitive.html">Primitive</a></dt> <!-- Look Up a Primitive Function -->
+      <dt><a href="print.html">print</a></dt> <!-- Print Values -->
+      <dt><a href="print.dataframe.html">print.dataframe</a></dt> <!-- Printing Data Frames -->
+      <dt><a href="print.default.html">print.default</a></dt> <!-- Default Printing -->
+      <dt><a href="prmatrix.html">prmatrix</a></dt> <!-- Print Matrices, Old-style -->
+      <dt><a href="proc.time.html">proc.time</a></dt> <!-- Running Time of R -->
+      <dt><a href="prod.html">prod</a></dt> <!-- Product of Vector Elements -->
+      <dt><a href="proportions.html">proportions</a></dt> <!-- Express Table Entries as Fraction of Marginal Table -->
+      <dt><a href="pushBack.html">pushBack</a></dt> <!-- Push Text Back on to a Connection -->
+      <dt><a href="qr.html">qr</a></dt> <!-- The QR Decomposition of a Matrix -->
+      <dt><a href="qraux.html">qraux</a></dt> <!-- Reconstruct the Q, R, or X Matrices from a QR Object -->
+      <dt><a href="quit.html">quit</a></dt> <!-- Terminate an R Session -->
+      <dt><a href="Quotes.html">Quotes</a></dt> <!-- Quotes -->
+      <dt><a href="Random.html">Random</a></dt> <!-- Random Number Generation -->
+      <dt><a href="Random-user.html">Random-user</a></dt> <!-- User-supplied Random Number Generation -->
+      <dt><a href="range.html">range</a></dt> <!-- Range of Values -->
+      <dt><a href="rank.html">rank</a></dt> <!-- Sample Ranks -->
+      <dt><a href="rapply.html">rapply</a></dt> <!-- Recursively Apply a Function to a List -->
+      <dt><a href="raw.html">raw</a></dt> <!-- Raw Vectors -->
+      <dt><a href="rawConnection.html">rawConnection</a></dt> <!-- Raw Connections -->
+      <dt><a href="rawConversion.html">rawConversion</a></dt> <!-- Convert to or from (Bit/Packed) Raw Vectors -->
+      <dt><a href="RdUtils.html">RdUtils</a></dt> <!-- Utilities for Processing Rd Files -->
+      <dt><a href="readBin.html">readBin</a></dt> <!-- Transfer Binary Data To and From Connections -->
+      <dt><a href="readChar.html">readChar</a></dt> <!-- Transfer Character Strings To and From Connections -->
+      <dt><a href="readline.html">readline</a></dt> <!-- Read a Line from the Terminal -->
+      <dt><a href="readLines.html">readLines</a></dt> <!-- Read Text Lines from a Connection -->
+      <dt><a href="readRDS.html">readRDS</a></dt> <!-- Serialization Interface for Single Objects -->
+      <dt><a href="readRenviron.html">readRenviron</a></dt> <!-- Set Environment Variables from a File -->
+      <dt><a href="Recall.html">Recall</a></dt> <!-- Recursive Calling -->
+      <dt><a href="regex.html">regex</a></dt> <!-- Regular Expressions as used in R -->
+      <dt><a href="reg.finalizer.html">reg.finalizer</a></dt> <!-- Finalization of Objects -->
+      <dt><a href="regmatches.html">regmatches</a></dt> <!-- Extract or Replace Matched Substrings -->
+      <dt><a href="rep.html">rep</a></dt> <!-- Replicate Elements of Vectors and Lists -->
+      <dt><a href="replace.html">replace</a></dt> <!-- Replace Values in a Vector -->
+      <dt><a href="Reserved.html">Reserved</a></dt> <!-- Reserved Words in R -->
+      <dt><a href="rev.html">rev</a></dt> <!-- Reverse Elements -->
+      <dt><a href="Rhome.html">Rhome</a></dt> <!-- Return the R Home Directory -->
+      <dt><a href="rle.html">rle</a></dt> <!-- Run Length Encoding -->
+      <dt><a href="rm.html">rm</a></dt> <!-- Remove Objects from a Specified Environment -->
+      <dt><a href="Round.html">Round</a></dt> <!-- Rounding of Numbers -->
+      <dt><a href="round.POSIXt.html">round.POSIXt</a></dt> <!-- Round / Truncate Data-Time Objects -->
+      <dt><a href="row.html">row</a></dt> <!-- Row Indexes -->
+      <dt><a href="row.names.html">row.names</a></dt> <!-- Get and Set Row Names for Data Frames -->
+      <dt><a href="rowsum.html">rowsum</a></dt> <!-- Give Column Sums of a Matrix or Data Frame, Based on a... -->
+      <dt><a href="S3method.html">S3method</a></dt> <!-- Register S3 Methods -->
+      <dt><a href="sample.html">sample</a></dt> <!-- Random Samples and Permutations -->
+      <dt><a href="save.html">save</a></dt> <!-- Save R Objects -->
+      <dt><a href="scale.html">scale</a></dt> <!-- Scaling and Centering of Matrix-like Objects -->
+      <dt><a href="scan.html">scan</a></dt> <!-- Read Data Values -->
+      <dt><a href="search.html">search</a></dt> <!-- Give Search Path for R Objects -->
+      <dt><a href="seek.html">seek</a></dt> <!-- Functions to Reposition Connections -->
+      <dt><a href="seq.html">seq</a></dt> <!-- Sequence Generation -->
+      <dt><a href="seq.Date.html">seq.Date</a></dt> <!-- Generate Regular Sequences of Dates -->
+      <dt><a href="seq.POSIXt.html">seq.POSIXt</a></dt> <!-- Generate Regular Sequences of Times -->
+      <dt><a href="sequence.html">sequence</a></dt> <!-- Create A Vector of Sequences -->
+      <dt><a href="serialize.html">serialize</a></dt> <!-- Simple Serialization Interface -->
+      <dt><a href="sets.html">sets</a></dt> <!-- Set Operations -->
+      <dt><a href="setTimeLimit.html">setTimeLimit</a></dt> <!-- Set CPU and/or Elapsed Time Limits -->
+      <dt><a href="showConnections.html">showConnections</a></dt> <!-- Display Connections -->
+      <dt><a href="shQuote.html">shQuote</a></dt> <!-- Quote Strings for Use in OS Shells -->
+      <dt><a href="sign.html">sign</a></dt> <!-- Sign Function -->
+      <dt><a href="sink.html">sink</a></dt> <!-- Send R Output to a File -->
+      <dt><a href="slice.index.html">slice.index</a></dt> <!-- Slice Indexes in an Array -->
+      <dt><a href="slotOp.html">slotOp</a></dt> <!-- Extract or Replace A Slot -->
+      <dt><a href="socketSelect.html">socketSelect</a></dt> <!-- Wait on Socket Connections -->
+      <dt><a href="solve.html">solve</a></dt> <!-- Solve a System of Equations -->
+      <dt><a href="sort.html">sort</a></dt> <!-- Sorting or Ordering Vectors -->
+      <dt><a href="source.html">source</a></dt> <!-- Read R Code from a File, a Connection or Expressions -->
+      <dt><a href="Special.html">Special</a></dt> <!-- Special Functions of Mathematics -->
+      <dt><a href="split.html">split</a></dt> <!-- Divide into Groups and Reassemble -->
+      <dt><a href="sprintf.html">sprintf</a></dt> <!-- Use C-style String Formatting Commands -->
+      <dt><a href="sQuote.html">sQuote</a></dt> <!-- Quote Text -->
+      <dt><a href="srcfile.html">srcfile</a></dt> <!-- References to Source Files and Code -->
+      <dt><a href="standardGeneric.html">standardGeneric</a></dt> <!-- Formal Method System - Dispatching S4 Methods -->
+      <dt><a href="startsWith.html">startsWith</a></dt> <!-- Does String Start or End With Another String? -->
+      <dt><a href="Startup.html">Startup</a></dt> <!-- Initialization at Start of an R Session -->
+      <dt><a href="stop.html">stop</a></dt> <!-- Stop Function Execution -->
+      <dt><a href="stopifnot.html">stopifnot</a></dt> <!-- Ensure the Truth of R Expressions -->
+      <dt><a href="strptime.html">strptime</a></dt> <!-- Date-time Conversion Functions to and from Character -->
+      <dt><a href="strrep.html">strrep</a></dt> <!-- Repeat the Elements of a Character Vector -->
+      <dt><a href="strsplit.html">strsplit</a></dt> <!-- Split the Elements of a Character Vector -->
+      <dt><a href="strtoi.html">strtoi</a></dt> <!-- Convert Strings to Integers -->
+      <dt><a href="strtrim.html">strtrim</a></dt> <!-- Trim Character Strings to Specified Display Widths -->
+      <dt><a href="structure.html">structure</a></dt> <!-- Attribute Specification -->
+      <dt><a href="strwrap.html">strwrap</a></dt> <!-- Wrap Character Strings to Format Paragraphs -->
+      <dt><a href="subset.html">subset</a></dt> <!-- Subsetting Vectors, Matrices and Data Frames -->
+      <dt><a href="substitute.html">substitute</a></dt> <!-- Substituting and Quoting Expressions -->
+      <dt><a href="substr.html">substr</a></dt> <!-- Substrings of a Character Vector -->
+      <dt><a href="sum.html">sum</a></dt> <!-- Sum of Vector Elements -->
+      <dt><a href="summary.html">summary</a></dt> <!-- Object Summaries -->
+      <dt><a href="svd.html">svd</a></dt> <!-- Singular Value Decomposition of a Matrix -->
+      <dt><a href="sweep.html">sweep</a></dt> <!-- Sweep out Array Summaries -->
+      <dt><a href="switch.html">switch</a></dt> <!-- Select One of a List of Alternatives -->
+      <dt><a href="Syntax.html">Syntax</a></dt> <!-- Operator Syntax and Precedence -->
+      <dt><a href="Sys.getenv.html">Sys.getenv</a></dt> <!-- Get Environment Variables -->
+      <dt><a href="Sys.getpid.html">Sys.getpid</a></dt> <!-- Get the Process ID of the R Session -->
+      <dt><a href="Sys.glob.html">Sys.glob</a></dt> <!-- Wildcard Expansion on File Paths -->
+      <dt><a href="Sys.info.html">Sys.info</a></dt> <!-- Extract System and User Information -->
+      <dt><a href="Sys.localeconv.html">Sys.localeconv</a></dt> <!-- Find Details of the Numerical and Monetary Representations in... -->
+      <dt><a href="sys.parent.html">sys.parent</a></dt> <!-- Functions to Access the Function Call Stack -->
+      <dt><a href="Sys.readlink.html">Sys.readlink</a></dt> <!-- Read File Symbolic Links -->
+      <dt><a href="Sys.setenv.html">Sys.setenv</a></dt> <!-- Set or Unset Environment Variables -->
+      <dt><a href="Sys.setFileTime.html">Sys.setFileTime</a></dt> <!-- Set File Time -->
+      <dt><a href="Sys.sleep.html">Sys.sleep</a></dt> <!-- Suspend Execution for a Time Interval -->
+      <dt><a href="sys.source.html">sys.source</a></dt> <!-- Parse and Evaluate Expressions from a File -->
+      <dt><a href="system.html">system</a></dt> <!-- Invoke a System Command -->
+      <dt><a href="system2.html">system2</a></dt> <!-- Invoke a System Command -->
+      <dt><a href="system.file.html">system.file</a></dt> <!-- Find Names of R System Files -->
+      <dt><a href="system.time.html">system.time</a></dt> <!-- CPU Time Used -->
+      <dt><a href="Sys.time.html">Sys.time</a></dt> <!-- Get Current Date and Time -->
+      <dt><a href="Sys.which.html">Sys.which</a></dt> <!-- Find Full Paths to Executables -->
+      <dt><a href="t.html">t</a></dt> <!-- Matrix Transpose -->
+      <dt><a href="table.html">table</a></dt> <!-- Cross Tabulation and Table Creation -->
+      <dt><a href="tabulate.html">tabulate</a></dt> <!-- Tabulation for Vectors -->
+      <dt><a href="tapply.html">tapply</a></dt> <!-- Apply a Function Over a Ragged Array -->
+      <dt><a href="taskCallback.html">taskCallback</a></dt> <!-- Add or Remove a Top-Level Task Callback -->
+      <dt><a href="taskCallbackManager.html">taskCallbackManager</a></dt> <!-- Create an R-level Task Callback Manager -->
+      <dt><a href="taskCallbackNames.html">taskCallbackNames</a></dt> <!-- Query the Names of the Current Internal Top-Level Task... -->
+      <dt><a href="tempfile.html">tempfile</a></dt> <!-- Create Names for Temporary Files -->
+      <dt><a href="textconnections.html">textconnections</a></dt> <!-- Text Connections -->
+      <dt><a href="tilde.html">tilde</a></dt> <!-- Tilde Operator -->
+      <dt><a href="timezones.html">timezones</a></dt> <!-- Time Zones -->
+      <dt><a href="toString.html">toString</a></dt> <!-- Convert an R Object to a Character String -->
+      <dt><a href="trace.html">trace</a></dt> <!-- Interactive Tracing and Debugging of Calls to a Function or... -->
+      <dt><a href="traceback.html">traceback</a></dt> <!-- Get and Print Call Stacks -->
+      <dt><a href="tracemem.html">tracemem</a></dt> <!-- Trace Copying of Objects -->
+      <dt><a href="transform.html">transform</a></dt> <!-- Transform an Object, for Example a Data Frame -->
+      <dt><a href="Trig.html">Trig</a></dt> <!-- Trigonometric Functions -->
+      <dt><a href="trimws.html">trimws</a></dt> <!-- Remove Leading/Trailing Whitespace -->
+      <dt><a href="try.html">try</a></dt> <!-- Try an Expression Allowing Error Recovery -->
+      <dt><a href="typeof.html">typeof</a></dt> <!-- The Type of an Object -->
+      <dt><a href="unique.html">unique</a></dt> <!-- Extract Unique Elements -->
+      <dt><a href="unix/Signals.html">unix/Signals</a></dt> <!-- Interrupting Execution of R -->
+      <dt><a href="unlink.html">unlink</a></dt> <!-- Delete Files and Directories -->
+      <dt><a href="unlist.html">unlist</a></dt> <!-- Flatten Lists -->
+      <dt><a href="unname.html">unname</a></dt> <!-- Remove &#39;names&#39; or &#39;dimnames&#39; -->
+      <dt><a href="UseMethod.html">UseMethod</a></dt> <!-- Class Methods -->
+      <dt><a href="userhooks.html">userhooks</a></dt> <!-- Functions to Get and Set Hooks for Load, Attach, Detach and... -->
+      <dt><a href="utf8Conversion.html">utf8Conversion</a></dt> <!-- Convert Integer Vectors to or from UTF-8-encoded Character... -->
+      <dt><a href="UTF8filepaths.html">UTF8filepaths</a></dt> <!-- File Paths not in the Native Encoding -->
+      <dt><a href="validUTF8.html">validUTF8</a></dt> <!-- Check if a Character Vector is Validly Encoded -->
+      <dt><a href="vector.html">vector</a></dt> <!-- Vectors -->
+      <dt><a href="Vectorize.html">Vectorize</a></dt> <!-- Vectorize a Scalar Function -->
+      <dt><a href="Version.html">Version</a></dt> <!-- Version Information -->
+      <dt><a href="warning.html">warning</a></dt> <!-- Warning Messages -->
+      <dt><a href="warnings.html">warnings</a></dt> <!-- Print Warning Messages -->
+      <dt><a href="weekday.POSIXt.html">weekday.POSIXt</a></dt> <!-- Extract Parts of a POSIXt or Date Object -->
+      <dt><a href="which.html">which</a></dt> <!-- Which indices are TRUE? -->
+      <dt><a href="which.min.html">which.min</a></dt> <!-- Where is the Min() or Max() or first TRUE or FALSE ? -->
+      <dt><a href="windows/shell.html">windows/shell</a></dt> <!-- Invoke a System Command, using a Shell -->
+      <dt><a href="windows/shell.exec.html">windows/shell.exec</a></dt> <!-- Open a File or URL using Windows File Associations -->
+      <dt><a href="with.html">with</a></dt> <!-- Evaluate an Expression in a Data Environment -->
+      <dt><a href="withVisible.html">withVisible</a></dt> <!-- Return both a Value and its Visibility -->
+      <dt><a href="write.html">write</a></dt> <!-- Write Data to a File -->
+      <dt><a href="writeLines.html">writeLines</a></dt> <!-- Write Lines to a Connection -->
+      <dt><a href="xtfrm.html">xtfrm</a></dt> <!-- Auxiliary Function for Sorting and Ranking -->
+      <dt><a href="zapsmall.html">zapsmall</a></dt> <!-- Rounding of Numbers: Zapping Small Ones to Zero -->
+      <dt><a href="zMachine.html">zMachine</a></dt> <!-- Numerical Characteristics of the Machine -->
+      <dt><a href="zpackages.html">zpackages</a></dt> <!-- Listing of Packages -->
+      <dt><a href="zScript.html">zScript</a></dt> <!-- Scripting Language Interface -->
+      <dt><a href="zutils.html">zutils</a></dt> <!-- Miscellaneous Internal/Programming Utilities -->
+    </dl>
+  </body>
+</html>

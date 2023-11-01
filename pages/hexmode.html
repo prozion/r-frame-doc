@@ -1,0 +1,101 @@
+
+  <!DOCTYPE html>
+  <html lang='en'>
+    <head>
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <link rel='stylesheet' href='../styles/rdrr.css'>
+      <title>hexmode</title>
+    </head>
+    <body>
+      <div class="container">
+<table summary="page for hexmode" width="100%"><tr>
+<td>hexmode</td>
+<td style="text-align: right;">R Documentation</td>
+</tr></table>
+<h2>Display Numbers in Hexadecimal</h2>
+<h3>Description</h3>
+<p>Convert or print integers in hexadecimal format, with as many digits
+as are needed to display the largest, using leading zeroes as
+necessary.
+</p>
+<h3>Usage</h3>
+<pre>
+as.hexmode(x)
+
+## S3 method for class 'hexmode'
+as.character(x, ...)
+
+## S3 method for class 'hexmode'
+format(x, width = NULL, upper.case = FALSE, ...)
+
+## S3 method for class 'hexmode'
+print(x, ...)
+</pre>
+<h3>Arguments</h3>
+<table summary="R argblock">
+<tr valign="top">
+<td><code>x</code></td>
+<td>
+<p>An object, for the methods inheriting from class <code>"hexmode"</code>.</p>
+</td>
+</tr>
+<tr valign="top">
+<td><code>width</code></td>
+<td>
+<p><code>NULL</code> or a positive integer specifying the minimum
+field width to be used, with padding by leading zeroes.</p>
+</td>
+</tr>
+<tr valign="top">
+<td><code>upper.case</code></td>
+<td>
+<p>a logical indicating whether to use upper-case
+letters or lower-case letters (default).</p>
+</td>
+</tr>
+<tr valign="top">
+<td><code>...</code></td>
+<td>
+<p>further arguments passed to or from other methods.</p>
+</td>
+</tr>
+</table>
+<h3>Details</h3>
+<p>Class <code>"hexmode"</code> consists of integer vectors with that class
+attribute, used merely to ensure that they are printed in hex.
+</p>
+<p>If <code>width = NULL</code> (the default), the output is padded with
+leading zeroes to the smallest width needed for all the non-missing
+elements.
+</p>
+<p><code>as.hexmode</code> can convert integers (of type <code>"integer"</code> or
+<code>"double"</code>) and character vectors whose elements contain only
+<code>0-9</code>, <code>a-f</code>, <code>A-F</code> (or are <code>NA</code>) to class
+<code>"hexmode"</code>.
+</p>
+<p>There is a <code>!</code> method and methods for <code>|</code> and
+<code>&amp;</code>:
+
+
+these recycle their arguments to the length of the longer and then
+apply the operators bitwise to each element.
+</p>
+<h3>See Also</h3>
+<p><code>octmode</code>, <code>sprintf</code> for other options in
+converting integers to hex, <code>strtoi</code> to convert hex
+strings to integers.
+</p>
+<h3>Examples</h3>
+<pre>
+i &lt;- as.hexmode("7fffffff")
+i; class(i)
+identical(as.integer(i), .Machine$integer.max)
+
+hm &lt;- as.hexmode(c(NA, 1)); hm
+as.integer(hm)
+</pre>
+</div>
+    </body>
+  </html>
+  

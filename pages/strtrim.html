@@ -1,0 +1,66 @@
+
+  <!DOCTYPE html>
+  <html lang='en'>
+    <head>
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <link rel='stylesheet' href='../styles/rdrr.css'>
+      <title>strtrim</title>
+    </head>
+    <body>
+      <div class="container">
+<table summary="page for strtrim" width="100%"><tr>
+<td>strtrim</td>
+<td style="text-align: right;">R Documentation</td>
+</tr></table>
+<h2>Trim Character Strings to Specified Display Widths</h2>
+<h3>Description</h3>
+<p>Trim character strings to specified display widths.
+</p>
+<h3>Usage</h3>
+<pre>
+strtrim(x, width)
+</pre>
+<h3>Arguments</h3>
+<table summary="R argblock">
+<tr valign="top">
+<td><code>x</code></td>
+<td>
+<p>a character vector, or an object which can be coerced to a
+character vector by <code>as.character</code>.</p>
+</td>
+</tr>
+<tr valign="top">
+<td><code>width</code></td>
+<td>
+<p>Positive integer values: recycled to the length of <code>x</code>.</p>
+</td>
+</tr>
+</table>
+<h3>Details</h3>
+<p>‘Width’ is interpreted as the display width in a monospaced
+font.  What happens with non-printable characters (such as backspace, tab)
+is implementation-dependent and may depend on the locale (e.g., they
+may be included in the count or they may be omitted).
+</p>
+<p>Using this function rather than <code>substr</code> is important when
+there might be double-width (e.g., Chinese/Japanese/Korean) characters
+in the character vector.
+</p>
+<h3>Value</h3>
+<p>A character vector of the same length and with the same attributes
+as <code>x</code> (after possible coercion).
+</p>
+<p>Elements of the result will have the encoding declared as that of
+the current locale (see <code>Encoding</code>) if the corresponding
+input had a declared encoding and the current locale is either Latin-1
+or UTF-8.
+</p>
+<h3>Examples</h3>
+<pre>
+strtrim(c("abcdef", "abcdef", "abcdef"), c(1,5,10))
+</pre>
+</div>
+    </body>
+  </html>
+  

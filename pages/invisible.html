@@ -1,0 +1,57 @@
+
+  <!DOCTYPE html>
+  <html lang='en'>
+    <head>
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <link rel='stylesheet' href='../styles/rdrr.css'>
+      <title>invisible</title>
+    </head>
+    <body>
+      <div class="container">
+<table summary="page for invisible" width="100%"><tr>
+<td>invisible</td>
+<td style="text-align: right;">R Documentation</td>
+</tr></table>
+<h2>Change the Print Mode to Invisible</h2>
+<h3>Description</h3>
+<p>Return a (temporarily) invisible copy of an object.
+</p>
+<h3>Usage</h3>
+<pre>invisible(x)</pre>
+<h3>Arguments</h3>
+<table summary="R argblock"><tr valign="top">
+<td><code>x</code></td>
+<td>
+<p>an arbitrary <span style="font-family: Courier New, Courier; color: #666666;"><b>R</b></span> object.</p>
+</td>
+</tr></table>
+<h3>Details</h3>
+<p>This function can be useful when it is desired to have functions
+return values which can be assigned, but which do not print when they
+are not assigned.
+</p>
+<p>This is a primitive function.
+</p>
+<h3>References</h3>
+<p>Becker, R. A., Chambers, J. M. and Wilks, A. R. (1988)
+<em>The New S Language</em>.
+Wadsworth &amp; Brooks/Cole.
+</p>
+<h3>See Also</h3>
+<p><code>withVisible</code>,
+<code>return</code>,
+<code>function</code>.
+</p>
+<h3>Examples</h3>
+<pre>
+# These functions both return their argument
+f1 &lt;- function(x) x
+f2 &lt;- function(x) invisible(x)
+f1(1)  # prints
+f2(1)  # does not
+</pre>
+</div>
+    </body>
+  </html>
+  

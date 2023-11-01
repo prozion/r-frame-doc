@@ -1,0 +1,53 @@
+
+  <!DOCTYPE html>
+  <html lang='en'>
+    <head>
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <link rel='stylesheet' href='../styles/rdrr.css'>
+      <title>labels</title>
+    </head>
+    <body>
+      <div class="container">
+<table summary="page for labels" width="100%"><tr>
+<td>labels</td>
+<td style="text-align: right;">R Documentation</td>
+</tr></table>
+<h2>Find Labels from Object</h2>
+<h3>Description</h3>
+<p>Find a suitable set of labels from an object for use in printing or
+plotting, for example.  A generic function.
+</p>
+<h3>Usage</h3>
+<pre>
+labels(object, ...)
+</pre>
+<h3>Arguments</h3>
+<table summary="R argblock">
+<tr valign="top">
+<td><code>object</code></td>
+<td>
+<p>Any <span style="font-family: Courier New, Courier; color: #666666;"><b>R</b></span> object: the function is generic.</p>
+</td>
+</tr>
+<tr valign="top">
+<td><code>...</code></td>
+<td>
+<p>further arguments passed to or from other methods.</p>
+</td>
+</tr>
+</table>
+<h3>Value</h3>
+<p>A character vector or list of such vectors.  For a vector the results
+is the names or <code>seq_along(x)</code> and for a data frame or array it
+is the dimnames (with <code>NULL</code> expanded to <code>seq_len(d[i])</code>).
+</p>
+<h3>References</h3>
+<p>Chambers, J. M. and Hastie, T. J. (1992)
+<em>Statistical Models in S.</em>
+Wadsworth &amp; Brooks/Cole.
+</p>
+</div>
+    </body>
+  </html>
+  

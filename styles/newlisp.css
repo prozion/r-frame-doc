@@ -1,0 +1,21 @@
+body, h1, h4, h4, h4, p {
+   font-family: Lucida Sans, Verdana, Helvetica, sanserif;
+   color: #444444;
+   font-size: 12pt;
+ }
+
+pre, tt {
+   font-family: Lucida Console, Courier;
+}
+
+dl {
+  line-height: 140%;
+}
+
+dt a {
+  color: rgb(55, 101, 144);
+}
+
+dt {
+  padding-left: 1pt;
+}

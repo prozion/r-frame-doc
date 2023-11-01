@@ -1,0 +1,70 @@
+
+  <!DOCTYPE html>
+  <html lang='en'>
+    <head>
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <link rel='stylesheet' href='../styles/rdrr.css'>
+      <title>ns-topenv</title>
+    </head>
+    <body>
+      <div class="container">
+<table summary="page for ns-topenv" width="100%"><tr>
+<td>ns-topenv</td>
+<td style="text-align: right;">R Documentation</td>
+</tr></table>
+<h2>Top Level Environment</h2>
+<h3>Description</h3>
+<p>Finding the top level <code>environment</code> from an environment
+<code>envir</code> and its enclosing environments.
+</p>
+<h3>Usage</h3>
+<pre>
+topenv(envir = parent.frame(),
+       matchThisEnv = getOption("topLevelEnvironment"))
+</pre>
+<h3>Arguments</h3>
+<table summary="R argblock">
+<tr valign="top">
+<td><code>envir</code></td>
+<td>
+<p>environment.</p>
+</td>
+</tr>
+<tr valign="top">
+<td><code>matchThisEnv</code></td>
+<td>
+<p>return this environment, if it matches before
+any other criterion is satisfied.  The default, the option
+<span class="samp">topLevelEnvironment</span>, is set by <code>sys.source</code>,
+which treats a specific environment as the top level environment.
+Supplying the argument as <code>NULL</code> or <code>emptyenv()</code> means
+it will never match.</p>
+</td>
+</tr>
+</table>
+<h3>Details</h3>
+<p><code>topenv</code> returns the first top level <code>environment</code>
+found when searching <code>envir</code> and its enclosing environments. If no
+top level environment is found, <code>.GlobalEnv</code> is returned.  An
+environment is considered top level if it is the internal environment
+of a namespace, a package environment in the <code>search</code>
+path, or <code>.GlobalEnv</code> .
+</p>
+<h3>See Also</h3>
+<p><code>environment</code>, notably <code>parent.env()</code> on
+“enclosing environments”;
+<code>loadNamespace</code> for more on namespaces.
+</p>
+<h3>Examples</h3>
+<pre>
+topenv(.GlobalEnv)
+topenv(new.env()) # also global env
+topenv(environment(ls))# namespace:base
+topenv(environment(lm))# namespace:stats
+
+</pre>
+</div>
+    </body>
+  </html>
+  

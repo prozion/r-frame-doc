@@ -1,0 +1,41 @@
+
+  <!DOCTYPE html>
+  <html lang='en'>
+    <head>
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <link rel='stylesheet' href='../styles/rdrr.css'>
+      <title>dev</title>
+    </head>
+    <body>
+      <div class="container">
+<table summary="page for .Device" width="100%"><tr>
+<td>.Device</td>
+<td style="text-align: right;">R Documentation</td>
+</tr></table>
+<h2>
+Lists of Open/Active Graphics Devices
+</h2>
+<h3>Description</h3>
+<p>A pairlist of the names of open graphics devices is stored in
+<code>.Devices</code>. The name of the active device (see
+<code>dev.cur</code>) is stored in <code>.Device</code>.  Both are symbols
+and so appear in the base namespace.
+</p>
+<h3>Value</h3>
+<p><code>.Device</code> is a length-one character vector.
+</p>
+<p><code>.Devices</code> is a pairlist of length-one character vectors.
+The first entry is always <code>"null device"</code>, and there are as many
+entries as the maximal number of graphics devices which have been
+simultaneously active.  If a device has been removed, its entry will be
+<code>""</code> until the device number is reused.
+</p>
+<p>Devices may add attributes to the character vector: for example
+devices which write to a file may record its path in attribute
+<code>"filepath"</code>.
+</p>
+</div>
+    </body>
+  </html>
+  
