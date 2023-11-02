@@ -17,6 +17,8 @@
       <dt><a href="Arithmetic.html">+, -, *, /, ^, %%, %/%</a></dt> <!-- Arithmetic Operators -->
       <dt><a href="complex.html">complex</a></dt> <!-- Complex Numbers and Basic Functionality -->
       <dt><a href="is.finite.html">is.finite</a></dt> <!-- Finite, Infinite and NaN Numbers -->
+      <dt><a href="Round.html">Rounding of numbers</a></dt> <!-- Rounding of Numbers -->
+      <dt><a href="sign.html">sign</a></dt> <!-- Sign Function -->
 
       <h4>Arrays and matrices</h4>
       <dt><a href="aperm.html">aperm</a></dt> <!-- Array Transposition -->
@@ -40,6 +42,11 @@
       <dt><a href="maxCol.html">maxCol</a></dt> <!-- Find Maximum Position in Matrix -->
       <dt><a href="norm.html">norm</a></dt> <!-- Compute the Norm of a Matrix -->
       <dt><a href="nrow.html">nrow</a></dt> <!-- The Number of Rows/Columns of an Array -->
+      <dt><a href="outer.html">outer</a></dt> <!-- Outer Product of Arrays -->
+        <dt><a href="qr.html">qr</a></dt> <!-- The QR Decomposition of a Matrix -->
+      <dt><a href="qraux.html">qraux</a></dt> <!-- Reconstruct the Q, R, or X Matrices from a QR Object -->
+      <dt><a href="scale.html">scale</a></dt> <!-- Scaling and Centering of Matrix-like Objects -->
+      <dt><a href="slice.index.html">slice.index</a></dt> <!-- Slice Indexes in an Array -->
 
       <h4>Assignments</h4>
       <dt><a href="assign.html">assign</a></dt> <!-- Assign a Value to a Name -->
@@ -47,16 +54,17 @@
       <dt><a href="delayedAssign.html">delayedAssign</a></dt> <!-- Delay Evaluation -->
 
       <h4>Built-ins</h4>
+      <dt><a href="Platform.html">.Platform</a></dt> <!-- Platform Specific Variables -->
       <dt><a href="builtins.html">builtins</a></dt> <!-- Returns the Names of All Built-in Objects -->
-      <dt><a href="Constants.html">Constants</a></dt> <!-- Built-in Constants -->
+      <dt><a href="Constants.html">Built-in constants</a></dt> <!-- Built-in Constants -->
       <dt><a href="contributors.html">contributors</a></dt> <!-- R Project Contributors -->
       <dt><a href="copyright.html">copyright</a></dt> <!-- Copyrights of Files Used to Build R -->
       <dt><a href="license.html">license</a></dt> <!-- The R License Terms -->
       <dt><a href="notyet.html">notyet</a></dt> <!-- Not Yet Implemented Functions and Unused Arguments -->
-      <dt><a href="NumericConstants.html">NumericConstants</a></dt> <!-- Numeric Constants -->
+      <dt><a href="NumericConstants.html">Numeric constants</a></dt> <!-- Numeric Constants -->
 
       <h4>Control flow and exceptions</h4>
-      <dt><a href="Control.html">Control</a></dt> <!-- Control Flow -->
+      <dt><a href="Control.html">Control flow</a></dt> <!-- Control Flow -->
       <dt><a href="ifelse.html">ifelse</a></dt> <!-- Conditional Element Selection -->
 
       <h4>Dataframes and Tables</h4>
@@ -73,21 +81,30 @@
       <dt><a href="Extract.data.frame.html">Extract.data.frame</a></dt> <!-- Extract or Replace Parts of a Data Frame -->
       <dt><a href="marginSums.html">marginSums</a></dt> <!-- Compute table margins -->
       <dt><a href="merge.html">merge</a></dt> <!-- Merge Two Data Frames -->
+      <dt><a href="proportions.html">proportions</a></dt> <!-- Express Table Entries as Fraction of Marginal Table -->
+      <dt><a href="row.html">row</a></dt> <!-- Row Indexes -->
+      <dt><a href="row.names.html">row.names</a></dt> <!-- Get and Set Row Names for Data Frames -->
+      <dt><a href="rowsum.html">rowsum</a></dt> <!-- Give Column Sums of a Matrix or Data Frame, Based on a... -->
 
       <h4>Date and time</h4>
       <dt><a href="as.Date.html">as.Date</a></dt> <!-- Date Conversion Functions to and from Character -->
       <dt><a href="as.POSIXlt.html">as.POSIXlt</a></dt> <!-- Date-time Conversion Functions -->
       <dt><a href="date.html">date</a></dt> <!-- System Date and Time -->
       <dt><a href="Dates.html">Dates</a></dt> <!-- Date Class -->
-      <dt><a href="DateTimeClasses.html">DateTimeClasses</a></dt> <!-- Date-Time Classes -->
+      <dt><a href="DateTimeClasses.html">Date-Time Classes</a></dt> <!-- Date-Time Classes -->
       <dt><a href="difftime.html">difftime</a></dt> <!-- Time Intervals / Differences -->
       <dt><a href="ISOdatetime.html">ISOdatetime</a></dt> <!-- Date-time Conversion Functions from Numeric Representations -->
       <dt><a href="Ops.Date.html">Ops.Date</a></dt> <!-- Operators on the Date Class -->
+      <dt><a href="round.POSIXt.html">round.POSIXt</a></dt> <!-- Round / Truncate Data-Time Objects -->
+      <dt><a href="seq.Date.html">seq.Date</a></dt> <!-- Generate Regular Sequences of Dates -->
+      <dt><a href="seq.POSIXt.html">seq.POSIXt</a></dt> <!-- Generate Regular Sequences of Times -->
 
       <h4>Debug</h4>
       <dt><a href="debug.html">debug</a></dt> <!-- Debug a Function -->
       <dt><a href="dump.html">dump</a></dt> <!-- Text Representations of R Objects -->
       <dt><a href="message.html">message</a></dt> <!-- Diagnostic Messages -->
+      <dt><a href="pretty.html">pretty</a></dt> <!-- Pretty Breakpoints -->
+      <dt><a href="proc.time.html">proc.time</a></dt> <!-- Running Time of R -->
 
       <h4>Environments</h4>
       <dt><a href="as.environment.html">as.environment</a></dt> <!-- Coerce to an Environment Object -->
@@ -96,11 +113,17 @@
       <dt><a href="browserText.html">browserText</a></dt> <!-- Functions to Retrieve Values Supplied by Calls to the Browser -->
       <dt><a href="eapply.html">eapply</a></dt> <!-- Apply a Function Over Values in an Environment -->
       <dt><a href="environment.html">environment</a></dt> <!-- Environment Access -->
-      <dt><a href="EnvVar.html">EnvVar</a></dt> <!-- Environment Variables -->
+      <dt><a href="EnvVar.html">Environment variables</a></dt> <!-- Environment Variables -->
+      <dt><a href="ls.html">ls</a></dt> <!-- List Objects -->
       <dt><a href="ns-topenv.html">ns-topenv</a></dt> <!-- Top Level Environment -->
+      <dt><a href="pos.to.env.html">pos.to.env</a></dt> <!-- Convert Positions in the Search Path to Environments -->
+      <dt><a href="readRenviron.html">readRenviron</a></dt> <!-- Set Environment Variables from a File -->
+      <dt><a href="rm.html">rm</a></dt> <!-- Remove Objects from a Specified Environment -->
 
       <h4>Equations</h4>
       <dt><a href="backsolve.html">backsolve</a></dt> <!-- Solve an Upper or Lower Triangular System -->
+      <dt><a href="polyroot.html">polyroot</a></dt> <!-- Find Zeros of a Real or Complex Polynomial -->
+      <dt><a href="solve.html">solve</a></dt> <!-- Solve a System of Equations -->
 
       <h4>Expressions</h4>
       <dt><a href="allnames.html">allnames</a></dt> <!-- Find All Names in an Expression -->
@@ -113,6 +136,8 @@
       <dt><a href="expression.html">expression</a></dt> <!-- Unevaluated Expressions -->
       <dt><a href="force.html">force</a></dt> <!-- Force Evaluation of an Argument -->
       <dt><a href="Last.value.html">Last.value</a></dt> <!-- Value of Last Evaluated Expression -->
+      <dt><a href="parse.html">parse</a></dt> <!-- Parse R Expressions -->
+      <dt><a href="Recall.html">Recall</a></dt> <!-- Recursive Calling -->
 
       <h4>Factors</h4>
       <dt><a href="cut.html">cut</a></dt> <!-- Convert Numeric to Factor -->
@@ -125,7 +150,7 @@
       <dt><a href="levels.html">levels</a></dt> <!-- Levels Attributes -->
       <dt><a href="nlevels.html">nlevels</a></dt> <!-- The Number of Levels of a Factor -->
 
-      <h4>Filesystem</h4>
+      <h4>Files and Connections</h4>
       <dt><a href="basename.html">basename</a></dt> <!-- Manipulate File Paths -->
       <dt><a href="connections.html">connections</a></dt> <!-- Functions to Manipulate Connections (Files, URLs, ...) -->
       <dt><a href="dput.html">dput</a></dt> <!-- Write an Object to a File or Recreate it -->
@@ -138,6 +163,15 @@
       <dt><a href="file.show.html">file.show</a></dt> <!-- Display One or More Text Files -->
       <dt><a href="list.files.html">list.files</a></dt> <!-- List the Files in a Directory/Folder -->
       <dt><a href="normalizePath.html">normalizePath</a></dt> <!-- Express File Paths in Canonical Form -->
+      <dt><a href="path.expand.html">path.expand</a></dt> <!-- Expand File Paths -->
+      <dt><a href="rawConnection.html">rawConnection</a></dt> <!-- Raw Connections -->
+      <dt><a href="readBin.html">readBin</a></dt> <!-- Transfer Binary Data To and From Connections -->
+      <dt><a href="readChar.html">readChar</a></dt> <!-- Transfer Character Strings To and From Connections -->
+      <dt><a href="readLines.html">readLines</a></dt> <!-- Read Text Lines from a Connection -->
+      <dt><a href="seek.html">seek</a></dt> <!-- Functions to Reposition Connections -->
+      <dt><a href="showConnections.html">showConnections</a></dt> <!-- Display Connections -->
+      <dt><a href="socketSelect.html">socketSelect</a></dt> <!-- Wait on Socket Connections -->
+      <dt><a href="source.html">source</a></dt> <!-- Read R Code from a File, a Connection or Expressions -->
 
       <h4>Functional Programming</h4>
       <dt><a href="funprog.html">funprog</a></dt> <!-- Common Higher-Order Functions in Functional Programming... -->
@@ -162,6 +196,7 @@
       <dt><a href="match.fun.html">match.fun</a></dt> <!-- Extract a Function Specified by Name -->
       <dt><a href="nargs.html">nargs</a></dt> <!-- The Number of Arguments to a Function -->
       <dt><a href="on.exit.html">on.exit</a></dt> <!-- Function Exit Code -->
+      <dt><a href="Primitive.html">Primitive</a></dt> <!-- Look Up a Primitive Function -->
 
       <h4>Functions FFI</h4>
       <dt><a href="CallExternal.html">CallExternal</a></dt> <!-- Modern Interfaces to C/C++ code -->
@@ -177,6 +212,7 @@
 
       <h4>Graphics</h4>
       <dt><a href="dev.html">dev</a></dt> <!-- Lists of Open/Active Graphics Devices -->
+      <dt><a href="plot.html">plot</a></dt> <!-- Generic X-Y Plotting -->
 
       <h4>HTTP and network</h4>
       <dt><a href="curlGetHeaders.html">curlGetHeaders</a></dt> <!-- Retrieve Headers from URLs -->
@@ -196,6 +232,12 @@
       <dt><a href="invisible.html">invisible</a></dt> <!-- Change the Print Mode to Invisible -->
       <dt><a href="noquote.html">noquote</a></dt> <!-- Class for &#39;no quote&#39; Printing of Character Strings -->
       <dt><a href="octmode.html">octmode</a></dt> <!-- Display Numbers in Octal -->
+      <dt><a href="print.html">print</a></dt> <!-- Print Values -->
+      <dt><a href="print.dataframe.html">print.dataframe</a></dt> <!-- Printing Data Frames -->
+      <dt><a href="print.default.html">print.default</a></dt> <!-- Default Printing -->
+      <dt><a href="prmatrix.html">prmatrix</a></dt> <!-- Print Matrices, Old-style -->
+      <dt><a href="readline.html">readline</a></dt> <!-- Read a Line from the Terminal -->
+      <dt><a href="sink.html">sink</a></dt> <!-- Send R Output to a File -->
 
       <h4>Interpreter</h4>
       <dt><a href="gc.html">gc</a></dt> <!-- Garbage Collection -->
@@ -203,7 +245,6 @@
       <dt><a href="gctorture.html">gctorture</a></dt> <!-- Torture Garbage Collector -->
       <dt><a href="interactive.html">interactive</a></dt> <!-- Is R Running Interactively? -->
       <dt><a href="isR.html">isR</a></dt> <!-- Are we using R, rather than S? -->
-      <dt><a href="make.names.html">make.names</a></dt> <!-- Make Syntactically Valid Names -->
       <dt><a href="memCompress.html">memCompress</a></dt> <!-- In-memory Compression and Decompression -->
       <dt><a href="memlimits.html">memlimits</a></dt> <!-- Query and Set Heap Size Limits -->
       <dt><a href="Memory.html">Memory</a></dt> <!-- Memory Available for Data Storage -->
@@ -219,6 +260,8 @@
       <dt><a href="list2DF.html">list2DF</a></dt> <!-- Create Data Frame From List -->
       <dt><a href="list2env.html">list2env</a></dt> <!-- From A List, Build or Add To an Environment -->
       <dt><a href="mapply.html">mapply</a></dt> <!-- Apply a Function to Multiple List or Vector Arguments -->
+      <dt><a href="rapply.html">rapply</a></dt> <!-- Recursively Apply a Function to a List -->
+      <dt><a href="rep.html">rep</a></dt> <!-- Replicate Elements of Vectors and Lists -->
 
       <h4>Logical operations</h4>
       <dt><a href="Comparison.html"><, <=, >, >=, ==, !=</a></dt> <!-- Relational Operators -->
@@ -236,6 +279,7 @@
       <dt><a href="Log.html">Log</a></dt> <!-- Logarithms and Exponentials -->
       <dt><a href="MathFun.html">sqrt, abs</a></dt> <!-- Miscellaneous Mathematical Functions -->
       <dt><a href="mean.html">mean</a></dt> <!-- Arithmetic Mean -->
+      <dt><a href="Special.html">Special functions</a></dt> <!-- Special Functions of Mathematics -->
 
       <h4>Namespaces</h4>
       <dt><a href="ns-hooks.html">ns-hooks</a></dt> <!-- Hooks for Namespace Events -->
@@ -267,11 +311,13 @@
        -->
       <dt><a href="lazyload.html">lazyload</a></dt> <!-- Lazy Load a Database of R Objects -->
       <dt><a href="length.html">length</a></dt> <!-- Length of an Object -->
-      <dt><a href="ls.html">ls</a></dt> <!-- List Objects -->
       <dt><a href="mode.html">mode</a></dt> <!-- The (Storage) Mode of an Object -->
       <dt><a href="NA.html">NA</a></dt> <!-- &#39;Not Available&#39; / Missing Values -->
       <dt><a href="names.html">names</a></dt> <!-- The Names of an Object -->
       <dt><a href="NULL.html">NULL</a></dt> <!-- The Null Object -->
+      <dt><a href="readRDS.html">readRDS</a></dt> <!-- Serialization Interface for Single Objects -->
+      <dt><a href="reg.finalizer.html">reg.finalizer</a></dt> <!-- Finalization of Objects -->
+      <dt><a href="S3method.html">S3method</a></dt> <!-- Register S3 Methods -->
 
       <h4>Packages</h4>
       <dt><a href="attach.html">attach</a></dt> <!-- Attach Set of R Objects to Search Path -->
@@ -291,6 +337,20 @@
 
       <h4>Randomness</h4>
       <dt><a href="jitter.html">jitter</a></dt> <!-- &#39;Jitter&#39; (Add Noise) to Numbers -->
+      <dt><a href="Random.html">Random</a></dt> <!-- Random Number Generation -->
+      <dt><a href="Random-user.html">Random-user</a></dt> <!-- User-supplied Random Number Generation -->
+      <dt><a href="sample.html">sample</a></dt> <!-- Random Samples and Permutations -->
+
+      <h4>Serialization</h4>
+      <dt><a href="save.html">save</a></dt> <!-- Save R Objects -->
+      <dt><a href="serialize.html">serialize</a></dt> <!-- Simple Serialization Interface -->
+
+      <h4>Session</h4>
+      <dt><a href="quit.html">quit</a></dt> <!-- Terminate an R Session -->
+      <dt><a href="Rhome.html">R.home</a></dt> <!-- Return the R Home Directory -->
+
+      <h4>Sets</h4>
+      <dt><a href="sets.html">sets</a></dt> <!-- Set Operations -->
 
       <h4>Strings and regexps</h4>
       <dt><a href="abbreviate.html">abbreviate</a></dt> <!-- Abbreviate Strings -->
@@ -304,6 +364,28 @@
       <dt><a href="grep.html">grep</a></dt> <!-- Pattern Matching and Replacement -->
       <dt><a href="make.unique.html">make.unique</a></dt> <!-- Make Character Strings Unique -->
       <dt><a href="nchar.html">nchar</a></dt> <!-- Count the Number of Characters (or Bytes or Width) -->
+      <dt><a href="paste.html">paste</a></dt> <!-- Concatenate Strings -->
+      <dt><a href="pcre_config.html">pcre_config</a></dt> <!-- Report Configuration Options for PCRE -->
+      <dt><a href="pmatch.html">pmatch</a></dt> <!-- Partial String Matching -->
+      <dt><a href="regex.html">regex</a></dt> <!-- Regular Expressions as used in R -->
+      <dt><a href="regmatches.html">regmatches</a></dt> <!-- Extract or Replace Matched Substrings -->
+      <dt><a href="shQuote.html">shQuote</a></dt> <!-- Quote Strings for Use in OS Shells -->
+      <dt><a href="sprintf.html">sprintf</a></dt> <!-- Use C-style String Formatting Commands -->
+      <dt><a href="sQuote.html">sQuote</a></dt> <!-- Quote Text -->
+      <dt><a href="startsWith.html">startsWith</a></dt> <!-- Does String Start or End With Another String? -->
+      <dt><a href="strrep.html">strrep</a></dt> <!-- Repeat the Elements of a Character Vector -->
+      <dt><a href="strsplit.html">strsplit</a></dt> <!-- Split the Elements of a Character Vector -->
+      <dt><a href="strtoi.html">strtoi</a></dt> <!-- Convert Strings to Integers -->
+      <dt><a href="strtrim.html">strtrim</a></dt> <!-- Trim Character Strings to Specified Display Widths -->
+      <dt><a href="strwrap.html">strwrap</a></dt> <!-- Wrap Character Strings to Format Paragraphs -->
+      <dt><a href="substr.html">substr</a></dt> <!-- Substrings of a Character Vector -->
+
+      <h4>Syntax</h4>
+      <dt><a href="pipeOp.html">|></a></dt> <!-- Forward Pipe Operator -->
+      <dt><a href="make.names.html">make.names</a></dt> <!-- Make Syntactically Valid Names -->
+      <dt><a href="Paren.html">Parenthesis and braces</a></dt> <!-- Parentheses and Braces -->
+      <dt><a href="Quotes.html">Quotes</a></dt> <!-- Quotes -->
+      <dt><a href="Reserved.html">Reserved words</a></dt> <!-- Reserved Words in R -->
 
       <h4>System</h4>
       <dt><a href="capabilities.html">capabilities</a></dt> <!-- Report Capabilities of this Build of R -->
@@ -313,6 +395,7 @@
       <dt><a href="l10n_info.html">l10n_info</a></dt> <!-- Localization Information -->
       <dt><a href="libcurlVersion.html">libcurlVersion</a></dt> <!-- Report Version of libcurl -->
       <dt><a href="locales.html">locales</a></dt> <!-- Query or Set Aspects of the Locale -->
+      <dt><a href="setTimeLimit.html">setTimeLimit</a></dt> <!-- Set CPU and/or Elapsed Time Limits -->
 
       <h4>Vectors</h4>
       <dt><a href="bincode.html">.bincode</a></dt> <!-- Bin a Numeric Vector -->
@@ -324,130 +407,56 @@
       <dt><a href="duplicated.html">duplicated</a></dt> <!-- Determine Duplicate Elements -->
       <dt><a href="Extremes.html">Extremes</a></dt> <!-- Maxima and Minima -->
       <dt><a href="findInterval.html">findInterval</a></dt> <!-- Find Interval Numbers or Indices -->
-      <dt><a href="grepRaw.html">grepRaw</a></dt> <!-- Pattern Matching for Raw Vectors -->
-      <dt><a href="iconv.html">iconv</a></dt> <!-- Convert Character Vector between Encodings -->
       <dt><a href="integer.html">integer</a></dt> <!-- Integer Vectors -->
       <dt><a href="logical.html">logical</a></dt> <!-- Logical Vectors -->
-      <dt><a href="LongVectors.html">LongVectors</a></dt> <!-- Long Vectors -->
+      <dt><a href="LongVectors.html">Long vectors</a></dt> <!-- Long Vectors -->
       <dt><a href="match.html">match</a></dt> <!-- Value Matching -->
       <dt><a href="match.arg.html">match.arg</a></dt> <!-- Argument Verification Using Partial Matching -->
       <dt><a href="numeric.html">numeric</a></dt> <!-- Numeric Vectors -->
+      <dt><a href="order.html">order</a></dt> <!-- Ordering Permutation -->
+      <dt><a href="prod.html">prod</a></dt> <!-- Product of Vector Elements -->
+      <dt><a href="range.html">range</a></dt> <!-- Range of Values -->
+      <dt><a href="replace.html">replace</a></dt> <!-- Replace Values in a Vector -->
+      <dt><a href="rev.html">rev</a></dt> <!-- Reverse Elements -->
+      <dt><a href="seq.html">seq</a></dt> <!-- Sequence Generation -->
+      <dt><a href="sequence.html">sequence</a></dt> <!-- Create A Vector of Sequences -->
+      <dt><a href="sort.html">sort</a></dt> <!-- Sorting or Ordering Vectors -->
+      <dt><a href="split.html">split</a></dt> <!-- Divide into Groups and Reassemble -->
+
+      <h4>Vectors Raw</h4>
+      <dt><a href="grepRaw.html">grepRaw</a></dt> <!-- Pattern Matching for Raw Vectors -->
+      <dt><a href="raw.html">raw</a></dt> <!-- Raw Vectors -->
+      <dt><a href="rawConversion.html">rawConversion</a></dt> <!-- Convert to or from (Bit/Packed) Raw Vectors -->
 
       <h4>Unsorted</h4>
       <dt><a href="dcf.html">dcf</a></dt> <!-- Read and Write Data in DCF Format -->
       <dt><a href="diff.html">diff</a></dt> <!-- Lagged Differences -->
       <dt><a href="dontCheck.html">dontCheck</a></dt> <!-- Identity Function to Suppress Checking -->
       <dt><a href="drop.html">drop</a></dt> <!-- Drop Redundant Extent Information -->
+      <dt><a href="iconv.html">iconv</a></dt> <!-- Convert Character Vector between Encodings -->
       <dt><a href="icuSetCollate.html">icuSetCollate</a></dt> <!-- Setup Collation by ICU -->
       <dt><a href="La_library.html">La_library</a></dt> <!-- LAPACK Library -->
       <dt><a href="La_version.html">La_version</a></dt> <!-- LAPACK Version -->
       <dt><a href="ns-dblcolon.html">ns-dblcolon</a></dt> <!-- Double Colon and Triple Colon Operators -->
-
-
-
-
-      <dt><a href="order.html">order</a></dt> <!-- Ordering Permutation -->
-      <dt><a href="outer.html">outer</a></dt> <!-- Outer Product of Arrays -->
-      <dt><a href="Paren.html">Paren</a></dt> <!-- Parentheses and Braces -->
-      <dt><a href="parse.html">parse</a></dt> <!-- Parse R Expressions -->
-      <dt><a href="paste.html">paste</a></dt> <!-- Concatenate Strings -->
-      <dt><a href="path.expand.html">path.expand</a></dt> <!-- Expand File Paths -->
-      <dt><a href="pcre_config.html">pcre_config</a></dt> <!-- Report Configuration Options for PCRE -->
-      <dt><a href="pipeOp.html">pipeOp</a></dt> <!-- Forward Pipe Operator -->
-      <dt><a href="Platform.html">Platform</a></dt> <!-- Platform Specific Variables -->
-      <dt><a href="plot.html">plot</a></dt> <!-- Generic X-Y Plotting -->
-      <dt><a href="pmatch.html">pmatch</a></dt> <!-- Partial String Matching -->
-      <dt><a href="polyroot.html">polyroot</a></dt> <!-- Find Zeros of a Real or Complex Polynomial -->
-      <dt><a href="pos.to.env.html">pos.to.env</a></dt> <!-- Convert Positions in the Search Path to Environments -->
-      <dt><a href="pretty.html">pretty</a></dt> <!-- Pretty Breakpoints -->
-      <dt><a href="Primitive.html">Primitive</a></dt> <!-- Look Up a Primitive Function -->
-      <dt><a href="print.html">print</a></dt> <!-- Print Values -->
-      <dt><a href="print.dataframe.html">print.dataframe</a></dt> <!-- Printing Data Frames -->
-      <dt><a href="print.default.html">print.default</a></dt> <!-- Default Printing -->
-      <dt><a href="prmatrix.html">prmatrix</a></dt> <!-- Print Matrices, Old-style -->
-      <dt><a href="proc.time.html">proc.time</a></dt> <!-- Running Time of R -->
-      <dt><a href="prod.html">prod</a></dt> <!-- Product of Vector Elements -->
-      <dt><a href="proportions.html">proportions</a></dt> <!-- Express Table Entries as Fraction of Marginal Table -->
       <dt><a href="pushBack.html">pushBack</a></dt> <!-- Push Text Back on to a Connection -->
-      <dt><a href="qr.html">qr</a></dt> <!-- The QR Decomposition of a Matrix -->
-      <dt><a href="qraux.html">qraux</a></dt> <!-- Reconstruct the Q, R, or X Matrices from a QR Object -->
-      <dt><a href="quit.html">quit</a></dt> <!-- Terminate an R Session -->
-      <dt><a href="Quotes.html">Quotes</a></dt> <!-- Quotes -->
-      <dt><a href="Random.html">Random</a></dt> <!-- Random Number Generation -->
-      <dt><a href="Random-user.html">Random-user</a></dt> <!-- User-supplied Random Number Generation -->
-      <dt><a href="range.html">range</a></dt> <!-- Range of Values -->
       <dt><a href="rank.html">rank</a></dt> <!-- Sample Ranks -->
-      <dt><a href="rapply.html">rapply</a></dt> <!-- Recursively Apply a Function to a List -->
-      <dt><a href="raw.html">raw</a></dt> <!-- Raw Vectors -->
-      <dt><a href="rawConnection.html">rawConnection</a></dt> <!-- Raw Connections -->
-      <dt><a href="rawConversion.html">rawConversion</a></dt> <!-- Convert to or from (Bit/Packed) Raw Vectors -->
       <dt><a href="RdUtils.html">RdUtils</a></dt> <!-- Utilities for Processing Rd Files -->
-      <dt><a href="readBin.html">readBin</a></dt> <!-- Transfer Binary Data To and From Connections -->
-      <dt><a href="readChar.html">readChar</a></dt> <!-- Transfer Character Strings To and From Connections -->
-      <dt><a href="readline.html">readline</a></dt> <!-- Read a Line from the Terminal -->
-      <dt><a href="readLines.html">readLines</a></dt> <!-- Read Text Lines from a Connection -->
-      <dt><a href="readRDS.html">readRDS</a></dt> <!-- Serialization Interface for Single Objects -->
-      <dt><a href="readRenviron.html">readRenviron</a></dt> <!-- Set Environment Variables from a File -->
-      <dt><a href="Recall.html">Recall</a></dt> <!-- Recursive Calling -->
-      <dt><a href="regex.html">regex</a></dt> <!-- Regular Expressions as used in R -->
-      <dt><a href="reg.finalizer.html">reg.finalizer</a></dt> <!-- Finalization of Objects -->
-      <dt><a href="regmatches.html">regmatches</a></dt> <!-- Extract or Replace Matched Substrings -->
-      <dt><a href="rep.html">rep</a></dt> <!-- Replicate Elements of Vectors and Lists -->
-      <dt><a href="replace.html">replace</a></dt> <!-- Replace Values in a Vector -->
-      <dt><a href="Reserved.html">Reserved</a></dt> <!-- Reserved Words in R -->
-      <dt><a href="rev.html">rev</a></dt> <!-- Reverse Elements -->
-      <dt><a href="Rhome.html">Rhome</a></dt> <!-- Return the R Home Directory -->
       <dt><a href="rle.html">rle</a></dt> <!-- Run Length Encoding -->
-      <dt><a href="rm.html">rm</a></dt> <!-- Remove Objects from a Specified Environment -->
-      <dt><a href="Round.html">Round</a></dt> <!-- Rounding of Numbers -->
-      <dt><a href="round.POSIXt.html">round.POSIXt</a></dt> <!-- Round / Truncate Data-Time Objects -->
-      <dt><a href="row.html">row</a></dt> <!-- Row Indexes -->
-      <dt><a href="row.names.html">row.names</a></dt> <!-- Get and Set Row Names for Data Frames -->
-      <dt><a href="rowsum.html">rowsum</a></dt> <!-- Give Column Sums of a Matrix or Data Frame, Based on a... -->
-      <dt><a href="S3method.html">S3method</a></dt> <!-- Register S3 Methods -->
-      <dt><a href="sample.html">sample</a></dt> <!-- Random Samples and Permutations -->
-      <dt><a href="save.html">save</a></dt> <!-- Save R Objects -->
-      <dt><a href="scale.html">scale</a></dt> <!-- Scaling and Centering of Matrix-like Objects -->
       <dt><a href="scan.html">scan</a></dt> <!-- Read Data Values -->
       <dt><a href="search.html">search</a></dt> <!-- Give Search Path for R Objects -->
-      <dt><a href="seek.html">seek</a></dt> <!-- Functions to Reposition Connections -->
-      <dt><a href="seq.html">seq</a></dt> <!-- Sequence Generation -->
-      <dt><a href="seq.Date.html">seq.Date</a></dt> <!-- Generate Regular Sequences of Dates -->
-      <dt><a href="seq.POSIXt.html">seq.POSIXt</a></dt> <!-- Generate Regular Sequences of Times -->
-      <dt><a href="sequence.html">sequence</a></dt> <!-- Create A Vector of Sequences -->
-      <dt><a href="serialize.html">serialize</a></dt> <!-- Simple Serialization Interface -->
-      <dt><a href="sets.html">sets</a></dt> <!-- Set Operations -->
-      <dt><a href="setTimeLimit.html">setTimeLimit</a></dt> <!-- Set CPU and/or Elapsed Time Limits -->
-      <dt><a href="showConnections.html">showConnections</a></dt> <!-- Display Connections -->
-      <dt><a href="shQuote.html">shQuote</a></dt> <!-- Quote Strings for Use in OS Shells -->
-      <dt><a href="sign.html">sign</a></dt> <!-- Sign Function -->
-      <dt><a href="sink.html">sink</a></dt> <!-- Send R Output to a File -->
-      <dt><a href="slice.index.html">slice.index</a></dt> <!-- Slice Indexes in an Array -->
       <dt><a href="slotOp.html">slotOp</a></dt> <!-- Extract or Replace A Slot -->
-      <dt><a href="socketSelect.html">socketSelect</a></dt> <!-- Wait on Socket Connections -->
-      <dt><a href="solve.html">solve</a></dt> <!-- Solve a System of Equations -->
-      <dt><a href="sort.html">sort</a></dt> <!-- Sorting or Ordering Vectors -->
-      <dt><a href="source.html">source</a></dt> <!-- Read R Code from a File, a Connection or Expressions -->
-      <dt><a href="Special.html">Special</a></dt> <!-- Special Functions of Mathematics -->
-      <dt><a href="split.html">split</a></dt> <!-- Divide into Groups and Reassemble -->
-      <dt><a href="sprintf.html">sprintf</a></dt> <!-- Use C-style String Formatting Commands -->
-      <dt><a href="sQuote.html">sQuote</a></dt> <!-- Quote Text -->
+
+
+
       <dt><a href="srcfile.html">srcfile</a></dt> <!-- References to Source Files and Code -->
       <dt><a href="standardGeneric.html">standardGeneric</a></dt> <!-- Formal Method System - Dispatching S4 Methods -->
-      <dt><a href="startsWith.html">startsWith</a></dt> <!-- Does String Start or End With Another String? -->
       <dt><a href="Startup.html">Startup</a></dt> <!-- Initialization at Start of an R Session -->
       <dt><a href="stop.html">stop</a></dt> <!-- Stop Function Execution -->
       <dt><a href="stopifnot.html">stopifnot</a></dt> <!-- Ensure the Truth of R Expressions -->
       <dt><a href="strptime.html">strptime</a></dt> <!-- Date-time Conversion Functions to and from Character -->
-      <dt><a href="strrep.html">strrep</a></dt> <!-- Repeat the Elements of a Character Vector -->
-      <dt><a href="strsplit.html">strsplit</a></dt> <!-- Split the Elements of a Character Vector -->
-      <dt><a href="strtoi.html">strtoi</a></dt> <!-- Convert Strings to Integers -->
-      <dt><a href="strtrim.html">strtrim</a></dt> <!-- Trim Character Strings to Specified Display Widths -->
       <dt><a href="structure.html">structure</a></dt> <!-- Attribute Specification -->
-      <dt><a href="strwrap.html">strwrap</a></dt> <!-- Wrap Character Strings to Format Paragraphs -->
       <dt><a href="subset.html">subset</a></dt> <!-- Subsetting Vectors, Matrices and Data Frames -->
       <dt><a href="substitute.html">substitute</a></dt> <!-- Substituting and Quoting Expressions -->
-      <dt><a href="substr.html">substr</a></dt> <!-- Substrings of a Character Vector -->
       <dt><a href="sum.html">sum</a></dt> <!-- Sum of Vector Elements -->
       <dt><a href="summary.html">summary</a></dt> <!-- Object Summaries -->
       <dt><a href="svd.html">svd</a></dt> <!-- Singular Value Decomposition of a Matrix -->
