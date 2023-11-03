@@ -1,0 +1,63 @@
+
+  <!DOCTYPE html>
+  <html lang='en'>
+    <head>
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <link rel='stylesheet' href='../styles/rdrr.css'>
+      <title>zScript</title>
+    </head>
+    <body>
+      <div class="container">
+<table summary="page for .Script" width="100%"><tr>
+<td>.Script</td>
+<td style="text-align: right;">R Documentation</td>
+</tr></table>
+<h2>Scripting Language Interface</h2>
+<h3>Description</h3>
+<p>Internal interface to run a script through its interpreter.
+</p>
+<h3>Usage</h3>
+<pre>
+.Script(interpreter, script, args, ...)
+</pre>
+<h3>Arguments</h3>
+<table summary="R argblock">
+<tr valign="top">
+<td><code>interpreter</code></td>
+<td>
+<p>a character string naming the interpreter for the
+script.</p>
+</td>
+</tr>
+<tr valign="top">
+<td><code>script</code></td>
+<td>
+<p>a character string with the base file name of the
+script, which must be located in the ‘<span class="file"><code>interpreter</code></span>’
+subdirectory of
+‘<span class="file"><var>R_SHARE_DIR</var></span>’ (normally ‘<span class="file"><var>R_HOME</var>/share</span>’).
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td><code>args</code></td>
+<td>
+<p>a character string giving the arguments to pass to the
+script.</p>
+</td>
+</tr>
+<tr valign="top">
+<td><code>...</code></td>
+<td>
+<p>further arguments to be passed to <code>system</code>
+when invoking the interpreter on the script.</p>
+</td>
+</tr>
+</table>
+<h3>Note</h3>
+<p>This function is for R internal use only.</p>
+</div>
+    </body>
+  </html>
+  

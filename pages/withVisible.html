@@ -1,0 +1,75 @@
+
+  <!DOCTYPE html>
+  <html lang='en'>
+    <head>
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <link rel='stylesheet' href='../styles/rdrr.css'>
+      <title>withVisible</title>
+    </head>
+    <body>
+      <div class="container">
+<table summary="page for withVisible" width="100%"><tr>
+<td>withVisible</td>
+<td style="text-align: right;">R Documentation</td>
+</tr></table>
+<h2>Return both a Value and its Visibility</h2>
+<h3>Description</h3>
+<p>This function evaluates an expression, returning it in a two element list
+containing its value and a flag showing whether it would automatically print.
+</p>
+<h3>Usage</h3>
+<pre>
+withVisible(x)
+</pre>
+<h3>Arguments</h3>
+<table summary="R argblock"><tr valign="top">
+<td><code>x</code></td>
+<td>
+<p>an expression to be evaluated.</p>
+</td>
+</tr></table>
+<h3>Details</h3>
+<p>The argument, <em>not</em> an <code>expression</code> object, rather
+an (unevaluated function) <code>call</code>, is evaluated in the
+caller's context.
+</p>
+<p>This is a primitive function.
+</p>
+<h3>Value</h3>
+<table summary="R valueblock">
+<tr valign="top">
+<td><code>value </code></td>
+<td>
+<p>The value of <code>x</code> after evaluation.</p>
+</td>
+</tr>
+<tr valign="top">
+<td><code>visible </code></td>
+<td>
+<p>logical; whether the value would auto-print.</p>
+</td>
+</tr>
+</table>
+<h3>See Also</h3>
+<p><code>invisible</code>, <code>eval</code>;
+<code>withAutoprint()</code> calls <code>source()</code> which
+itself uses <code>withVisible()</code> in order to correctly
+“auto print”.
+</p>
+<h3>Examples</h3>
+<pre>
+x &lt;- 1
+withVisible(x &lt;- 1) # *$visible is FALSE
+x
+withVisible(x)      # *$visible is TRUE
+
+# Wrap the call in evalq() for special handling
+
+df &lt;- data.frame(a = 1:5, b = 1:5)
+evalq(withVisible(a + b), envir = df)
+</pre>
+</div>
+    </body>
+  </html>
+  

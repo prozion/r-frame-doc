@@ -47,7 +47,7 @@ html_wrap <- function(content, fname) {
 
 index <- extract_index()
 
-for (i in 51:420) {
+for (i in 421:450) {
   fname <- index[i, "fname"]
   url <- index[i, "url"]
   content <- read_html(url) %>% get_content %>% as.character %>% html_wrap(fname)
